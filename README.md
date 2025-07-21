@@ -61,13 +61,11 @@ cd TedXiimt
 npm install
 npm run dev
 📌 TODO
- Add actual speaker/event data
+ Add section for 
 
  Deploy to GitHub Pages / Vercel / Netlify
 
- Add responsive navbar toggle for mobile
 
- Improve accessibility (ARIA roles)
 
 🤝 Contributions
 Pull requests are welcome! If you have creative animation ideas or UX enhancements, feel free to contribute.
