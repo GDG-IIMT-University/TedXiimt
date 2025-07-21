@@ -61,7 +61,9 @@ cd TedXiimt
 npm install
 npm run dev
 📌 TODO
- Add section for 
+ Add section for library
+
+Add Onboarding section 
 
  Deploy to GitHub Pages / Vercel / Netlify
 
