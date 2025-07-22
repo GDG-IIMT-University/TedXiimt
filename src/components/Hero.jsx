@@ -10,7 +10,7 @@ const Hero = () => {
         initial={{ rotate: 0, scale: 0.8 }}
         animate={{ rotate: 360, scale: 1 }}
         transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
-        className="absolute inset-0 flex justify-center items-center opacity-10 pointer-events-none"
+        className="absolute inset-0 flex justify-center items-center opacity-100 pointer-events-none"
       >
         <div className="text-[30vw] font-extrabold text-white/10 tracking-widest">
           X
