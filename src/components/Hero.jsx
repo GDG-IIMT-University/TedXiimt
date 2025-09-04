@@ -19,22 +19,29 @@ const Hero = () => {
 
       {/* Hero Content */}
       <div className="relative z-10 flex flex-col items-center justify-center h-full text-center px-4">
+        
+        {/* Main Title */}
         <motion.h1
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.2, ease: "easeOut" }}
-          className="text-4xl md:text-6xl font-bold mb-4 tracking-tight"
+          className="text-4xl md:text-6xl font-bold tracking-tight leading-tight"
         >
-          <span className="text-red-600">TEDx</span>IIMT
+          <span className="block text-red-600">TEDx</span>
+          <span className="block text-white text-2xl md:text-4xl font-medium ml-22">
+                IIMT University
+          </span>
         </motion.h1>
 
+        {/* Tagline */}
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.5, duration: 1 }}
-          className="text-gray-300 max-w-2xl text-sm md:text-lg"
+          className="text-gray-300 max-w-2xl text-sm md:text-lg mt-4"
         >
-          Ideas Worth Spreading — A celebration of voices that matter. Explore innovation, inspiration, and identity.
+          Ideas Worth Spreading — A celebration of voices that matter. 
+          Explore innovation, inspiration, and identity.
         </motion.p>
       </div>
     </section>
