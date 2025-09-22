@@ -38,8 +38,9 @@ const Header = () => {
       {/* Desktop Navigation Links (hidden on small screens) */}
       <nav className="hidden md:flex gap-6 text-sm md:text-base font-medium items-center">
         <a href="/" className="hover:text-red-500 transition">Home</a>
-        <a href="/mystery" className="hover:text-red-500 transition">Mystery</a>
+        {/* <a href="/mystery" className="hover:text-red-500 transition">Mystery</a> */}
         <a href="/sponsors" className="hover:text-red-500 transition">Sponsors</a>
+        <a href="/speakers" className="hover:text-red-500 transition">Speakers</a>
         <div className="relative">
           <button
             onClick={toggleJoinUs}
@@ -85,6 +86,13 @@ const Header = () => {
               onClick={closeMenu}
             >
               Sponsors
+            </a>
+            <a 
+              href="/speakers" 
+              className="py-3 hover:text-red-500 transition border-b border-gray-800"
+              onClick={closeMenu}
+            >
+              Speakers
             </a>
             <div className="border-b border-gray-800">
               <button
