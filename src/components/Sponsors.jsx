@@ -7,29 +7,11 @@ import mysteryLogo from './mystery-logo.png';
 
 const sponsorsData = [
   {
-    name: "???",
+    name: "XYZ",
     logo: mysteryLogo, // use a dark silhouette or question mark image
     tier: "Title Sponsor",
     mysteryHint: "🔮 The story is yet to be revealed..."
   },
-  {
-    name: "Hidden Ally",
-    logo: mysteryLogo,
-    tier: "Gold Sponsor",
-    mysteryHint: "🕵️ What’s behind the curtain?"
-  },
-  {
-    name: "Unknown Visionary",
-    logo: mysteryLogo,
-    tier: "Silver Sponsor",
-    mysteryHint: "✨ Coming soon..."
-  },
-  {
-    name: "Secret Supporter",
-    logo: mysteryLogo,
-    tier: "Bronze Sponsor",
-    mysteryHint: "🔍 Stay tuned for the unveiling."
-  }
 ];
 
 

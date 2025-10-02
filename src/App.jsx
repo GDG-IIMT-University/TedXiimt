@@ -6,6 +6,7 @@ import Hero from './components/Hero';
 import AboutUs from './components/AboutUs';
 import Mystery from './components/Mystery';
 import Sponsors from './components/Sponsors';
+import Speakers from './components/Speakers'; // ← Add this import
 import Footer from './components/Footer';
 
 const App = () => {
@@ -24,10 +25,12 @@ const App = () => {
       <AboutUs />
 
       {/* Mystery Section */}
-      <Mystery />
+      {/* <Mystery /> */}
 
       {/* Sponsors Section */}
-      <Sponsors isHomepage={true} />
+      <Speakers isHomepage={true} />
+      {/* <Sponsors isHomepage={true} />  */}
+      
 
       {/* Footer with About and Contact */}
       <Footer />
