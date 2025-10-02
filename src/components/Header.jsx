@@ -39,8 +39,15 @@ const Header = () => {
       <nav className="hidden md:flex gap-6 text-sm md:text-base font-medium items-center">
         <a href="/" className="hover:text-red-500 transition">Home</a>
         {/* <a href="/mystery" className="hover:text-red-500 transition">Mystery</a> */}
-        <a href="/sponsors" className="hover:text-red-500 transition">Sponsors</a>
         <a href="/speakers" className="hover:text-red-500 transition">Speakers</a>
+        <a href="/sponsors" className="hover:text-red-500 transition">Sponsors</a>
+
+        <a href="/blog" className="hover:text-red-500 transition">Blog</a>
+        <a href="/about" className="hover:text-red-500 transition">About Us</a>
+
+        <a href="/Team" className="hover:text-red-500 transition">Team</a>
+        
+        
         <div className="relative">
           <button
             onClick={toggleJoinUs}
@@ -112,13 +119,7 @@ const Header = () => {
                 </div>
               )}
             </div>
-            <a 
-              href="#contact" 
-              className="py-3 hover:text-red-500 transition"
-              onClick={closeMenu}
-            >
-              Contact
-            </a>
+            
           </div>
         </div>
       )}

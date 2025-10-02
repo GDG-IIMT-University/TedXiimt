@@ -12,23 +12,21 @@ import Footer from './components/Footer';
 const App = () => {
   return (
     <div className="bg-black text-white font-sans scroll-smooth">
-      {/* Header with logo and navbar */}
+    
       <Header />
 
-      {/* Hero Section with props */}
+      
       <Hero 
         title="Welcome to TEDxIIMT"
         subtitle="Ideas Worth Spreading. Voices That Inspire."
       />
 
-      {/* About Us Section */}
-      <AboutUs />
+      
+      
 
-      {/* Mystery Section */}
-      {/* <Mystery /> */}
-
-      {/* Sponsors Section */}
+      
       <Speakers isHomepage={true} />
+      <AboutUs />
       {/* <Sponsors isHomepage={true} />  */}
       
 
