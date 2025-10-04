@@ -21,12 +21,14 @@ const App = () => {
         subtitle="Ideas Worth Spreading. Voices That Inspire."
       />
 
-      
-      
-
-      
-      <Speakers isHomepage={true} />
+      {/* About Us Section */}
       <AboutUs />
+
+      {/* Mystery Section */}
+      {/* <Mystery /> */}
+
+      {/* Sponsors Section */}
+      <Speakers isHomepage={true} />
       {/* <Sponsors isHomepage={true} />  */}
       
 

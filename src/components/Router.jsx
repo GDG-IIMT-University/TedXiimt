@@ -11,10 +11,7 @@ const Router = () => {
     switch (path) {
       case '/':
         return React.lazy(() => import('../App'));
-      
-      case '/about':
-        return React.lazy(() => import('../pages/AboutUsPage'));
-      case '/mystery':
+       case '/mystery':
           return React.lazy(() => import('../pages/MysteryPage'));
        case '/sponsors':
           return React.lazy(() => import('../pages/SponsorsPage'));
