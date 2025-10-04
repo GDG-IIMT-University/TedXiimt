@@ -112,13 +112,7 @@ const Header = () => {
                 </div>
               )}
             </div>
-            <a 
-              href="#contact" 
-              className="py-3 hover:text-red-500 transition"
-              onClick={closeMenu}
-            >
-              Contact
-            </a>
+            
           </div>
         </div>
       )}

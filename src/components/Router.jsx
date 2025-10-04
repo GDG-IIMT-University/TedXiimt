@@ -1,4 +1,7 @@
-import React from 'react';
+import React, { Suspense } from 'react';
+
+
+
 
 const Router = () => {
   const path = window.location.pathname;
@@ -20,6 +23,17 @@ const Router = () => {
         return React.lazy(() => import('../pages/SponsorForm'));
       case '/join-us/attendee':
         return React.lazy(() => import('../pages/AttendeeForm'));
+      case '/blog':
+        return React.lazy(() => import('../pages/BlogsPage'));
+      case '/Team':
+  console.log('Loading TeamPage...');
+  return React.lazy(() => import('../pages/TeamPage').then(module => {
+    console.log('TeamPage loaded:', module);
+    return module;
+  }).catch(error => {
+    console.error('Error loading TeamPage:', error);
+    return import('../App');
+  }));
       default:
         return React.lazy(() => import('../App'));
     }
