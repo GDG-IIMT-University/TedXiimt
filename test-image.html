@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Test - Hero Background</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            background: #000;
+            color: #fff;
+            font-family: Arial, sans-serif;
+        }
+        .test-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .image-preview {
+            width: 100%;
+            height: 400px;
+            background-size: cover;
+            background-position: center;
+            border: 2px solid #EB0028;
+            margin: 20px 0;
+        }
+        .info {
+            background: #1a1a1a;
+            padding: 20px;
+            border-left: 4px solid #EB0028;
+            margin: 20px 0;
+        }
+        .success {
+            color: #0f0;
+        }
+        .error {
+            color: #f00;
+        }
+        button {
+            background: #EB0028;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            margin: 10px 5px;
+        }
+        button:hover {
+            background: #ff1a3d;
+        }
+    </style>
+</head>
+<body>
+    <div class="test-container">
+        <h1>🔍 Hero Background Image Test</h1>
+        
+        <div class="info">
+            <h2>Test Results:</h2>
+            <p id="status">Testing...</p>
+            <p><strong>Image Path:</strong> <code>src/assets/hero-background.jpg</code></p>
+            <p><strong>Dev Server:</strong> <code>http://localhost:5174</code></p>
+        </div>
+
+        <h2>Image Preview:</h2>
+        <div class="image-preview" id="preview"></div>
+
+        <div class="info">
+            <h3>Quick Actions:</h3>
+            <button onclick="testImage()">🔄 Test Image Load</button>
+            <button onclick="clearCache()">🗑️ Clear Cache & Reload</button>
+            <button onclick="window.open('http://localhost:5174', '_blank')">🚀 Open App</button>
+        </div>
+
+        <div class="info">
+            <h3>✅ Checklist:</h3>
+            <ul id="checklist">
+                <li>📁 Image file exists in src/assets/</li>
+                <li>📝 Import statement is correct</li>
+                <li>🎨 Background style uses imported variable</li>
+                <li>🔥 Dev server is running on port 5174</li>
+                <li>💾 Browser cache is cleared</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        function testImage() {
+            const img = new Image();
+            const status = document.getElementById('status');
+            const preview = document.getElementById('preview');
+            
+            status.innerHTML = '⏳ Loading image...';
+            
+            img.onload = function() {
+                status.innerHTML = '<span class="success">✅ SUCCESS! Image loaded successfully!</span>';
+                status.innerHTML += '<br><strong>Dimensions:</strong> ' + img.width + ' x ' + img.height + ' pixels';
+                preview.style.backgroundImage = `url(${img.src})`;
+            };
+            
+            img.onerror = function() {
+                status.innerHTML = '<span class="error">❌ ERROR! Image failed to load</span>';
+                status.innerHTML += '<br><strong>Check:</strong> Is the dev server running? Is the file in src/assets/?';
+            };
+            
+            // Try to load from dev server
+            img.src = 'http://localhost:5174/src/assets/hero-background.jpg';
+        }
+
+        function clearCache() {
+            if (confirm('This will clear cache and reload. Continue?')) {
+                localStorage.clear();
+                sessionStorage.clear();
+                location.reload(true);
+            }
+        }
+
+        // Auto-test on load
+        window.onload = testImage;
+    </script>
+</body>
+</html>
