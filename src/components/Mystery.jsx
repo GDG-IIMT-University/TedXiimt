@@ -51,7 +51,6 @@ const Mystery = () => {
                   transition={{ delay: 0.2, duration: 0.6 }}
                   className="bg-white/5 rounded-xl p-6 border border-white/10"
                 >
-                  <div className="text-3xl text-red-500 mb-4">🔍</div>
                   <h4 className="text-lg font-semibold mb-2">Discover</h4>
                   <p className="text-gray-400 text-sm">Uncover hidden truths and revolutionary ideas</p>
                 </motion.div>
@@ -63,7 +62,7 @@ const Mystery = () => {
                   transition={{ delay: 0.4, duration: 0.6 }}
                   className="bg-white/5 rounded-xl p-6 border border-white/10"
                 >
-                  <div className="text-3xl text-red-500 mb-4">🧩</div>
+                  
                   <h4 className="text-lg font-semibold mb-2">Connect</h4>
                   <p className="text-gray-400 text-sm">Piece together the puzzle of innovation</p>
                 </motion.div>
@@ -75,7 +74,7 @@ const Mystery = () => {
                   transition={{ delay: 0.6, duration: 0.6 }}
                   className="bg-white/5 rounded-xl p-6 border border-white/10"
                 >
-                  <div className="text-3xl text-red-500 mb-4">💡</div>
+                 
                   <h4 className="text-lg font-semibold mb-2">Transform</h4>
                   <p className="text-gray-400 text-sm">Experience ideas that change everything</p>
                 </motion.div>
