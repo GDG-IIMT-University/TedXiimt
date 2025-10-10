@@ -19,6 +19,8 @@ const Footer = () => {
           <ul className="text-gray-400 text-sm space-y-2">
             <li><a href="/" className="hover:text-red-400 transition">Home</a></li>
             <li><a href="/mystery" className="hover:text-red-400 transition">Mystery</a></li>
+            <li><a href="/team" className="hover:text-red-400 transition">Team</a></li>
+            <li><a href="/gallery" className="hover:text-red-400 transition">Gallery</a></li>
             <li><a href="/sponsors" className="hover:text-red-400 transition">Sponsors</a></li>
             <li><a href="#contact" className="hover:text-red-400 transition">Contact</a></li>
           </ul>
@@ -28,18 +30,23 @@ const Footer = () => {
         <div>
           <h3 className="text-xl font-semibold text-red-500 mb-4">Contact Us</h3>
           <p className="text-gray-400 text-sm mb-2">
-            Email: <a href="mailto:tedxiimt@iimt.ac.in" className="hover:text-red-400">tedxiimt@iimt.ac.in</a>
+            Email: <a href="mailto:info@tedxiimtuniversity.com" className="hover:text-red-400">info@tedxiimtuniversity.com</a>
           </p>
           <p className="text-gray-400 text-sm">
-            Phone: <a href="tel:+911234567890" className="hover:text-red-400">+91 12345 67890</a>
+            Phone: <a href="tel:+918923550415" className="hover:text-red-400">+91 89235 50415</a>
           </p>
         </div>
 
       </div>
 
-      {/* Bottom Text */}
-      <div className="mt-12 text-center text-gray-500 text-xs border-t border-white/10 pt-6">
-        © {new Date().getFullYear()} TEDxIIMT. All rights reserved.
+      {/* Required TEDx License Text */}
+      <div className="mt-12 text-center border-t border-white/10 pt-6 space-y-3">
+        <p className="text-gray-400 text-sm font-medium">
+          This independent TEDx event is operated under license from TED.
+        </p>
+        <p className="text-gray-500 text-xs">
+          © {new Date().getFullYear()} TEDxIIMT. All rights reserved.
+        </p>
       </div>
     </footer>
   );

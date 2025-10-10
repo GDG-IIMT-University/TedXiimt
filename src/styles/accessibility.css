@@ -1,0 +1,386 @@
+/* Accessibility CSS for TEDxIIMT */
+
+/* Screen Reader Only Content */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.sr-only:focus {
+  position: static;
+  width: auto;
+  height: auto;
+  padding: inherit;
+  margin: inherit;
+  overflow: visible;
+  clip: auto;
+  white-space: normal;
+}
+
+/* Focus Management */
+.focus-trap {
+  position: relative;
+}
+
+/* Enhanced Focus Indicators */
+html.focus-enhanced *:focus {
+  outline: 3px solid #ef4444 !important;
+  outline-offset: 2px !important;
+}
+
+/* High Contrast Mode */
+html.high-contrast {
+  filter: contrast(150%) brightness(110%);
+}
+
+html.high-contrast .bg-gray-900 {
+  background-color: #000000 !important;
+}
+
+html.high-contrast .text-gray-400 {
+  color: #ffffff !important;
+}
+
+html.high-contrast .border-gray-700 {
+  border-color: #ffffff !important;
+}
+
+/* Reduced Motion */
+html.reduce-motion *,
+html.reduce-motion *::before,
+html.reduce-motion *::after {
+  animation-duration: 0.01ms !important;
+  animation-iteration-count: 1 !important;
+  transition-duration: 0.01ms !important;
+  scroll-behavior: auto !important;
+}
+
+/* Font Size Adjustments */
+html.font-large {
+  font-size: 18px;
+}
+
+html.font-xl {
+  font-size: 20px;
+}
+
+/* Keyboard Navigation */
+.keyboard-nav *:focus {
+  outline: 2px solid #ef4444;
+  outline-offset: 2px;
+}
+
+/* Button Accessibility */
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+/* Form Accessibility */
+input:invalid {
+  border-color: #ef4444;
+}
+
+input:invalid:focus {
+  box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.3);
+}
+
+/* ARIA Live Regions */
+[aria-live] {
+  position: absolute;
+  left: -10000px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+/* Skip Links */
+.skip-nav a {
+  position: absolute;
+  top: -40px;
+  left: 6px;
+  background: #ef4444;
+  color: white;
+  padding: 8px;
+  text-decoration: none;
+  border-radius: 4px;
+  z-index: 1000;
+}
+
+.skip-nav a:focus {
+  top: 6px;
+}
+
+/* Color Contrast Improvements */
+@media (prefers-contrast: high) {
+  .text-gray-400 {
+    color: #d1d5db !important;
+  }
+  
+  .text-gray-500 {
+    color: #9ca3af !important;
+  }
+  
+  .bg-gray-800 {
+    background-color: #1f2937 !important;
+  }
+  
+  .border-gray-700 {
+    border-color: #374151 !important;
+  }
+}
+
+/* Motion Preferences */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Touch Target Sizes */
+button, 
+[role="button"], 
+input[type="submit"], 
+input[type="button"],
+a {
+  min-height: 44px;
+  min-width: 44px;
+}
+
+/* Focus Visible Support */
+.js-focus-visible :focus:not(.focus-visible) {
+  outline: none;
+}
+
+.focus-visible {
+  outline: 2px solid #ef4444;
+  outline-offset: 2px;
+}
+
+/* Screen Reader Improvements */
+[aria-expanded="true"] + [aria-hidden="true"] {
+  display: none;
+}
+
+[aria-expanded="false"] + [aria-hidden="false"] {
+  display: block;
+}
+
+/* Loading States */
+[aria-busy="true"] {
+  cursor: wait;
+}
+
+/* Error States */
+[aria-invalid="true"] {
+  border-color: #ef4444;
+}
+
+[role="alert"] {
+  color: #ef4444;
+  font-weight: 500;
+}
+
+/* Modal Accessibility */
+body.modal-open {
+  overflow: hidden;
+}
+
+[aria-modal="true"] {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+}
+
+/* Tooltip Accessibility */
+[role="tooltip"] {
+  position: absolute;
+  z-index: 1000;
+  background: #1f2937;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 14px;
+  max-width: 250px;
+  word-wrap: break-word;
+}
+
+/* Progress Indicators */
+[role="progressbar"] {
+  background-color: #374151;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+[role="progressbar"]::before {
+  content: '';
+  display: block;
+  height: 100%;
+  background-color: #ef4444;
+  transition: width 0.3s ease;
+}
+
+/* Tab Navigation */
+[role="tablist"] {
+  display: flex;
+  border-bottom: 1px solid #374151;
+}
+
+[role="tab"] {
+  padding: 12px 24px;
+  border: none;
+  background: transparent;
+  color: #9ca3af;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+}
+
+[role="tab"]:hover {
+  color: #d1d5db;
+}
+
+[role="tab"][aria-selected="true"] {
+  color: #ef4444;
+  border-bottom-color: #ef4444;
+}
+
+[role="tabpanel"] {
+  padding: 24px 0;
+}
+
+[role="tabpanel"][aria-hidden="true"] {
+  display: none;
+}
+
+/* Menu Navigation */
+[role="menu"] {
+  background: #1f2937;
+  border: 1px solid #374151;
+  border-radius: 6px;
+  padding: 4px 0;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+[role="menuitem"] {
+  display: block;
+  width: 100%;
+  padding: 8px 16px;
+  border: none;
+  background: transparent;
+  color: #d1d5db;
+  text-align: left;
+  cursor: pointer;
+}
+
+[role="menuitem"]:hover,
+[role="menuitem"]:focus {
+  background-color: #374151;
+  color: white;
+}
+
+/* Disclosure/Accordion */
+[aria-expanded="false"] + [role="region"] {
+  display: none;
+}
+
+[aria-expanded="true"] + [role="region"] {
+  display: block;
+}
+
+/* Status Messages */
+[role="status"] {
+  position: absolute;
+  left: -10000px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+/* Print Accessibility */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  
+  a[href]::after {
+    content: " (" attr(href) ")";
+  }
+  
+  abbr[title]::after {
+    content: " (" attr(title) ")";
+  }
+}
+
+/* Dark Mode Accessibility */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --focus-color: #60a5fa;
+    --error-color: #f87171;
+    --success-color: #34d399;
+    --warning-color: #fbbf24;
+  }
+}
+
+/* Animation Preferences */
+@media (prefers-reduced-motion: no-preference) {
+  .animate-entrance {
+    animation: slideUp 0.3s ease-out;
+  }
+  
+  @keyframes slideUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+/* Responsive Text Scaling */
+@media (max-width: 640px) {
+  html.font-large {
+    font-size: 16px;
+  }
+  
+  html.font-xl {
+    font-size: 18px;
+  }
+}
+
+/* Voice Control Support */
+[data-voice-command] {
+  position: relative;
+}
+
+[data-voice-command]::before {
+  content: attr(data-voice-command);
+  position: absolute;
+  top: -20px;
+  left: 0;
+  font-size: 10px;
+  color: #6b7280;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.voice-commands-visible [data-voice-command]::before {
+  opacity: 1;
+}
