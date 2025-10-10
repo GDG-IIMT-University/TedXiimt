@@ -65,31 +65,64 @@ const Hero = () => {
   return (
     <section 
       className="relative w-full min-h-screen bg-black text-white overflow-hidden"
+      style={{ 
+        fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif'
+      }}
       aria-label="Hero section"
     >
-      {/* Optimized Background with Architectural Silhouette */}
-      <div className="absolute inset-0 bg-gradient-to-br from-black via-[#1a1a1a] to-[#2a0a0a]">
+      {/* Mobile-Responsive Background with Architectural Silhouette */}
+      <div className="absolute inset-0 bg-black overflow-hidden">
+        {/* Background Image Layer - Full mobile responsiveness */}
+        <img 
+          src="/transparent-hero-bg.PNG" 
+          alt=""
+          className="absolute inset-0 
+                     w-full h-full
+                     object-cover object-center
+                     xs:scale-110 xs:object-[center_30%]
+                     sm:scale-105 sm:object-[center_40%]
+                     md:scale-100 md:object-center
+                     lg:scale-100 lg:object-center
+                     transition-all duration-700 ease-out
+                     will-change-transform"
+          style={{
+            minWidth: '100%',
+            minHeight: '100%',
+            maxWidth: 'none'
+          }}
+          aria-hidden="true"
+          onError={(e) => {
+            console.error('Hero background image failed to load:', e);
+            e.target.style.display = 'none';
+          }}
+          onLoad={(e) => {
+            console.log('✅ Hero background image loaded successfully');
+            console.log('Image dimensions:', e.target.naturalWidth, 'x', e.target.naturalHeight);
+            console.log('Viewport:', window.innerWidth, 'x', window.innerHeight);
+          }}
+        />
+        
+        {/* Responsive Gradient Overlay - Adjusts for different screen sizes */}
+        <div className="absolute inset-0 bg-gradient-to-b 
+                        from-black/50 via-black/40 to-black/60
+                        sm:from-black/45 sm:via-black/35 sm:to-black/55
+                        md:from-black/40 md:via-black/30 md:to-black/50
+                        lg:from-black/35 lg:via-black/25 lg:to-black/45" />
+        
+        {/* Additional responsive gradient for depth */}
+        <div className="absolute inset-0 bg-gradient-to-t 
+                        from-[#EB0028]/15 via-transparent to-transparent
+                        md:from-[#EB0028]/10 md:via-transparent md:to-transparent" />
+        
         {/* Subtle animated overlay - respects reduced motion */}
         {!prefersReducedMotion && (
           <motion.div
             initial={{ opacity: 0 }}
-            animate={{ opacity: [0.1, 0.15, 0.1] }}
+            animate={{ opacity: [0.05, 0.15, 0.05] }}
             transition={{ duration: 8, repeat: Infinity, ease: 'easeInOut' }}
             className="absolute inset-0 bg-gradient-to-t from-[#EB0028]/10 via-transparent to-transparent"
           />
         )}
-
-        {/* Static architectural background (inspired by your image) */}
-        <div 
-          className="absolute bottom-0 left-0 right-0 h-2/5 opacity-20"
-          style={{
-            background: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 300'%3E%3Cpath fill='%23ffffff' d='M0,300 L100,150 L150,200 L200,100 L300,150 L350,120 L450,180 L500,140 L600,190 L650,160 L750,220 L800,200 L800,300 Z'/%3E%3C/svg%3E")`,
-            backgroundSize: 'cover',
-            backgroundPosition: 'bottom',
-            backgroundRepeat: 'no-repeat'
-          }}
-          aria-hidden="true"
-        />
       </div>
 
       {/* Main Content Container */}
@@ -253,6 +286,7 @@ const Hero = () => {
       </div>
 
       {/* Performance optimization: Preload critical resources */}
+      <link rel="preload" as="image" href="/hero-background.jpg" />
       <link rel="preconnect" href="https://fonts.googleapis.com" />
     </section>
   );

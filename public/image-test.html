@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Test</title>
+    <style>
+        body { margin: 0; padding: 0; background: #000; }
+        .test {
+            width: 100vw;
+            height: 100vh;
+            background-image: url(/hero-bg.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        .info {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background: rgba(0,0,0,0.8);
+            color: white;
+            padding: 20px;
+            font-family: Arial;
+        }
+    </style>
+</head>
+<body>
+    <div class="test"></div>
+    <div class="info">
+        <h2>Image Test</h2>
+        <p>If you see Indian landmarks, the image works!</p>
+        <p>Path: /hero-bg.jpg</p>
+        <p>Open at: <a href="http://localhost:5173/image-test.html" style="color: #EB0028">http://localhost:5173/image-test.html</a></p>
+    </div>
+    <script>
+        // Test if image loads
+        const img = new Image();
+        img.onload = () => {
+            console.log('✅ Image loaded successfully!', img.width, 'x', img.height);
+            document.querySelector('.info').innerHTML += '<p style="color: #0f0">✅ IMAGE LOADED: ' + img.width + 'x' + img.height + '</p>';
+        };
+        img.onerror = () => {
+            console.error('❌ Image failed to load');
+            document.querySelector('.info').innerHTML += '<p style="color: #f00">❌ IMAGE FAILED TO LOAD</p>';
+        };
+        img.src = '/hero-bg.jpg';
+    </script>
+</body>
+</html>
