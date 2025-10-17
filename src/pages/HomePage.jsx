@@ -25,29 +25,27 @@ const HomePage = () => {
         {/* 2. Countdown Timer - Creates Urgency (Von Restorff Effect) */}
         <CountdownTimer />
         
-        {/* 3. Value Proposition - Why Attend (Miller's Rule - 4 key benefits) */}
-        <ValueProposition />
-        
-        {/* 4. Featured Speakers - Social Proof & Authority */}
-        <FeaturedSpeakers />
-        
-        {/* 5. Event Highlights - Features & Benefits (Progressive Disclosure) */}
-        <EventHighlights />
-        
         {/* 6. What is TEDx - Educational Context */}
         <WhatIsTEDx />
+
+        {/* 3. Value Proposition - Why Attend (Miller's Rule - 4 key benefits) */}
+        <ValueProposition />
+
+        {/* 4. Featured Speakers - Social Proof & Authority */}
+        <FeaturedSpeakers />
+
         
+        {/* 5. Event Highlights - Features & Benefits (Progressive Disclosure) */}
+        {/* <EventHighlights /> */}
+
         {/* 7. Testimonials - Social Proof & Trust Building */}
-        <Testimonials />
+        {/* <Testimonials /> */}
         
         {/* 8. Blog Preview - Fresh Content & Engagement */}
-        <Blog />
-        
-        {/* 9. Partners - Credibility & Trust */}
-        <Partners />
-        
-        {/* 10. Newsletter Signup - Lead Generation (Peak-End Rule) */}
-        <NewsletterSignup />
+        {/* <Blog /> */}
+
+
+
       </main>
 
 

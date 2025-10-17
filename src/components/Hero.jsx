@@ -212,7 +212,7 @@ const Hero = () => {
             className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8 md:mb-12"
           >
             <a
-              href="/join-us/attendee"
+              href="https://forms.gle/uwZAyzv84SB1WMo37"
               className="group relative w-full sm:w-auto bg-[#EB0028] hover:bg-[#ff1a3d] text-white font-bold px-8 md:px-12 py-4 md:py-5 text-base md:text-lg transition-all duration-300 overflow-hidden"
               aria-label="Register for TEDxIIMT event"
             >
