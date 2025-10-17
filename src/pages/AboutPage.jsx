@@ -28,7 +28,7 @@ const AboutPage = () => {
                 <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight">
                   About{' '}
                   <span className="text-[#EB0028] inline-block">
-                    TEDxIIMT
+                    TEDxIIMT University
                   </span>
                 </h1>
                 
@@ -116,6 +116,184 @@ const AboutPage = () => {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="h-px w-full bg-gradient-to-r from-transparent via-[#EB0028]/20 to-transparent"></div>
         </div>
+
+         {/* About TED Section */}
+        <section className="py-16 md:py-24 lg:py-32">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="max-w-5xl mx-auto">
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: "-100px" }}
+                transition={{ duration: 0.6 }}
+              >
+                <div className="text-center mb-12 md:mb-16">
+                  <div className="inline-block mb-4">
+                    <span className="text-[#EB0028] text-sm font-bold uppercase tracking-widest">
+                      About TED
+                    </span>
+                  </div>
+                  <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold">
+                    About <span className="text-[#EB0028]">TED</span>
+                  </h2>
+                </div>
+                
+                <div className="space-y-8 md:space-y-10">
+                  <div className="space-y-6">
+                    <p className="text-lg md:text-xl text-gray-300 leading-relaxed">
+                      TED is a nonprofit, nonpartisan organization dedicated to discovering, debating and 
+                      spreading ideas that spark conversation, deepen understanding and drive meaningful 
+                      change. Our organization is devoted to curiosity, reason, wonder and the pursuit of 
+                      knowledge — without an agenda.
+                    </p>
+                    
+                    <p className="text-base md:text-lg text-gray-400 leading-relaxed">
+                      We welcome people from every discipline and culture who seek a deeper understanding 
+                      of the world and connection with others, and we invite everyone to engage with ideas 
+                      and activate them in your community.
+                    </p>
+                  </div>
+                  
+                  <div className="bg-[#0a0a0a] border border-[#1a1a1a] p-8 md:p-10 space-y-6">
+                    <p className="text-base md:text-lg text-gray-300 leading-relaxed">
+                      TED began in 1984 as a conference where Technology, Entertainment and Design converged, 
+                      but today it spans a multitude of worldwide communities and initiatives exploring everything 
+                      from science and business to education, arts and global issues.
+                    </p>
+                    
+                    <p className="text-base text-gray-400 leading-relaxed">
+                      In addition to the TED Talks curated from our annual conferences and published on TED.com, 
+                      we produce original podcasts, short video series, animated educational lessons (TED-Ed) 
+                      and TV programs that are translated into more than 100 languages and distributed via 
+                      partnerships around the world.
+                    </p>
+                    
+                    <p className="text-base text-gray-400 leading-relaxed">
+                      Each year, thousands of independently run TEDx events bring people together to share ideas 
+                      and bridge divides in communities on every continent. Through the Audacious Project, TED 
+                      has helped catalyze more than $3 billion in funding for projects that seek to make the 
+                      world more beautiful, sustainable and just.
+                    </p>
+                  </div>
+                  
+                  <div className="space-y-6">
+                    <p className="text-base text-gray-400 leading-relaxed">
+                      In 2020, TED launched Countdown, an initiative to accelerate solutions to the climate 
+                      crisis and mobilize a movement for a net-zero future, and in 2023 TED launched TED Democracy 
+                      to spark a new kind of conversation focused on realistic pathways towards a more vibrant 
+                      and equitable future.
+                    </p>
+                    
+                    <div className="pt-6">
+                      <a 
+                        href="https://www.ted.com/about/programs-initiatives" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-2 text-[#EB0028] hover:text-[#ff1a3d] transition-colors duration-300 font-medium"
+                      >
+                        View a full list of TED's programs and initiatives
+                        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                  
+                  <div className="border-t border-[#1a1a1a] pt-8">
+                    <p className="text-base text-gray-400 mb-4">Follow TED on social media:</p>
+                    <div className="flex flex-wrap gap-4">
+                      {[
+                        { name: "Facebook", url: "https://www.facebook.com/TED" },
+                        { name: "Instagram", url: "https://www.instagram.com/ted" },
+                        { name: "LinkedIn", url: "https://www.linkedin.com/company/ted-conferences" },
+                        { name: "TikTok", url: "https://www.tiktok.com/@tedtoks" },
+                        { name: "X (Twitter)", url: "https://twitter.com/TEDTalks" }
+                      ].map((social) => (
+                        <a
+                          key={social.name}
+                          href={social.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="px-4 py-2 bg-[#0a0a0a] border border-[#1a1a1a] hover:border-[#EB0028]/50 transition-all duration-300 text-sm text-gray-300"
+                        >
+                          {social.name}
+                        </a>
+                      ))}
+                    </div>
+                  </div>
+                  
+                  <div className="pt-8">
+                    <div className="inline-flex items-center gap-4 bg-[#0a0a0a] border border-[#EB0028]/30 px-6 py-4 md:px-8 md:py-5">
+                      <div className="w-1 h-12 bg-[#EB0028]"></div>
+                      <p className="text-sm md:text-base text-gray-500 italic text-left">
+                        This independent TEDx event is operated
+                        <br className="hidden sm:block" />
+                        under license from TED
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </motion.div>
+            </div>
+          </div>
+        </section>
+
+
+        {/* Divider */}
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="h-px w-full bg-gradient-to-r from-transparent via-[#EB0028]/20 to-transparent"></div>
+        </div>
+
+        {/* About TEDx Section */}
+        <section className="py-16 md:py-24 lg:py-32">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="max-w-5xl mx-auto">
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: "-100px" }}
+                transition={{ duration: 0.6 }}
+              >
+                <div className="text-center mb-12 md:mb-16">
+                  <div className="inline-block mb-4">
+                    <span className="text-[#EB0028] text-sm font-bold uppercase tracking-widest">
+                      About TEDx
+                    </span>
+                  </div>
+                  <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
+                    About <span className="text-[#EB0028]">TEDx</span>, x = independently organized event
+                  </h2>
+                </div>
+                
+                <div className="bg-[#0a0a0a] border-l-4 border-[#EB0028] p-8 md:p-12 mb-16 relative overflow-hidden">
+                  <div className="absolute inset-0 bg-gradient-to-br from-[#EB0028]/5 to-transparent pointer-events-none"></div>
+                  
+                  <div className="relative z-10 space-y-6">
+                    <p className="text-lg md:text-xl text-gray-300 leading-relaxed">
+                      In the spirit of discovering and spreading ideas, TEDx is a program of local, 
+                      self-organized events that bring people together to share a TED-like experience. 
+                      At a TEDx event, TED Talks video and live speakers combine to spark deep discussion 
+                      and connection.
+                    </p>
+                    
+                    <p className="text-base md:text-lg text-gray-400 leading-relaxed">
+                      These local, self-organized events are branded TEDx, where x = independently 
+                      organized TED event. The TED Conference provides general guidance for the TEDx 
+                      program, but individual TEDx events are self-organized. (Subject to certain rules 
+                      and regulations.)
+                    </p>
+                  </div>
+                </div>
+              </motion.div>
+            </div>
+          </div>
+        </section>
+
+        {/* Divider */}
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="h-px w-full bg-gradient-to-r from-transparent via-[#EB0028]/20 to-transparent"></div>
+        </div>
+
 
         {/* Values Section */}
         <section className="py-16 md:py-24 lg:py-32">
@@ -303,246 +481,8 @@ const AboutPage = () => {
         {/* Divider */}
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="h-px w-full bg-gradient-to-r from-transparent via-[#EB0028]/20 to-transparent"></div>
-        </div>
-
-        {/* Team Section */}
-        <section className="py-16 md:py-24 lg:py-32">
-          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="max-w-6xl mx-auto">
-              <motion.div
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: "-100px" }}
-                transition={{ duration: 0.6 }}
-                className="text-center mb-16 md:mb-20"
-              >
-                <div className="inline-block mb-4">
-                  <span className="text-[#EB0028] text-sm font-bold uppercase tracking-widest">
-                    The Organizers
-                  </span>
-                </div>
-                <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
-                  Meet Our <span className="text-[#EB0028]">Team</span>
-                </h2>
-                <p className="text-lg md:text-xl text-gray-400 max-w-3xl mx-auto">
-                  Passionate individuals dedicated to creating an unforgettable experience
-                </p>
-              </motion.div>
-              
-              <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-10 lg:gap-12">
-                {[
-                  { name: "Dr. Sarah Johnson", role: "Lead Organizer" },
-                  { name: "Michael Chen", role: "Speaker Curator" },
-                  { name: "Priya Sharma", role: "Marketing Lead" },
-                  { name: "Rajesh Kumar", role: "Technical Director" }
-                ].map((member, index) => (
-                  <motion.div
-                    key={member.name}
-                    initial={{ opacity: 0, y: 30 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true, margin: "-50px" }}
-                    transition={{ duration: 0.5, delay: index * 0.1 }}
-                    className="group text-center"
-                  >
-                    <div className="mb-6 md:mb-8">
-                      <div className="w-32 h-32 md:w-40 md:h-40 mx-auto bg-[#0a0a0a] border-2 border-[#EB0028]/20 group-hover:border-[#EB0028] transition-all duration-300 flex items-center justify-center relative overflow-hidden">
-                        <div className="absolute inset-0 bg-gradient-to-br from-[#EB0028]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                        <span className="text-3xl md:text-4xl font-bold text-[#EB0028] relative z-10">
-                          {member.name.split(' ').map(n => n[0]).join('')}
-                        </span>
-                      </div>
-                    </div>
-                    
-                    <div className="space-y-2">
-                      <h3 className="text-lg md:text-xl font-bold text-white">
-                        {member.name}
-                      </h3>
-                      <p className="text-[#EB0028] text-sm font-medium uppercase tracking-wider">
-                        {member.role}
-                      </p>
-                    </div>
-                  </motion.div>
-                ))}
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Divider */}
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="h-px w-full bg-gradient-to-r from-transparent via-[#EB0028]/20 to-transparent"></div>
-        </div>
-
-        {/* About TEDx Section */}
-        <section className="py-16 md:py-24 lg:py-32">
-          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="max-w-5xl mx-auto">
-              <motion.div
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: "-100px" }}
-                transition={{ duration: 0.6 }}
-              >
-                <div className="text-center mb-12 md:mb-16">
-                  <div className="inline-block mb-4">
-                    <span className="text-[#EB0028] text-sm font-bold uppercase tracking-widest">
-                      About TEDx
-                    </span>
-                  </div>
-                  <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
-                    About <span className="text-[#EB0028]">TEDx</span>, x = independently organized event
-                  </h2>
-                </div>
-                
-                <div className="bg-[#0a0a0a] border-l-4 border-[#EB0028] p-8 md:p-12 mb-16 relative overflow-hidden">
-                  <div className="absolute inset-0 bg-gradient-to-br from-[#EB0028]/5 to-transparent pointer-events-none"></div>
-                  
-                  <div className="relative z-10 space-y-6">
-                    <p className="text-lg md:text-xl text-gray-300 leading-relaxed">
-                      In the spirit of discovering and spreading ideas, TEDx is a program of local, 
-                      self-organized events that bring people together to share a TED-like experience. 
-                      At a TEDx event, TED Talks video and live speakers combine to spark deep discussion 
-                      and connection.
-                    </p>
-                    
-                    <p className="text-base md:text-lg text-gray-400 leading-relaxed">
-                      These local, self-organized events are branded TEDx, where x = independently 
-                      organized TED event. The TED Conference provides general guidance for the TEDx 
-                      program, but individual TEDx events are self-organized. (Subject to certain rules 
-                      and regulations.)
-                    </p>
-                  </div>
-                </div>
-              </motion.div>
-            </div>
-          </div>
-        </section>
-
-        {/* Divider */}
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="h-px w-full bg-gradient-to-r from-transparent via-[#EB0028]/20 to-transparent"></div>
-        </div>
-
-        {/* About TED Section */}
-        <section className="py-16 md:py-24 lg:py-32">
-          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="max-w-5xl mx-auto">
-              <motion.div
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: "-100px" }}
-                transition={{ duration: 0.6 }}
-              >
-                <div className="text-center mb-12 md:mb-16">
-                  <div className="inline-block mb-4">
-                    <span className="text-[#EB0028] text-sm font-bold uppercase tracking-widest">
-                      About TED
-                    </span>
-                  </div>
-                  <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold">
-                    About <span className="text-[#EB0028]">TED</span>
-                  </h2>
-                </div>
-                
-                <div className="space-y-8 md:space-y-10">
-                  <div className="space-y-6">
-                    <p className="text-lg md:text-xl text-gray-300 leading-relaxed">
-                      TED is a nonprofit, nonpartisan organization dedicated to discovering, debating and 
-                      spreading ideas that spark conversation, deepen understanding and drive meaningful 
-                      change. Our organization is devoted to curiosity, reason, wonder and the pursuit of 
-                      knowledge — without an agenda.
-                    </p>
-                    
-                    <p className="text-base md:text-lg text-gray-400 leading-relaxed">
-                      We welcome people from every discipline and culture who seek a deeper understanding 
-                      of the world and connection with others, and we invite everyone to engage with ideas 
-                      and activate them in your community.
-                    </p>
-                  </div>
-                  
-                  <div className="bg-[#0a0a0a] border border-[#1a1a1a] p-8 md:p-10 space-y-6">
-                    <p className="text-base md:text-lg text-gray-300 leading-relaxed">
-                      TED began in 1984 as a conference where Technology, Entertainment and Design converged, 
-                      but today it spans a multitude of worldwide communities and initiatives exploring everything 
-                      from science and business to education, arts and global issues.
-                    </p>
-                    
-                    <p className="text-base text-gray-400 leading-relaxed">
-                      In addition to the TED Talks curated from our annual conferences and published on TED.com, 
-                      we produce original podcasts, short video series, animated educational lessons (TED-Ed) 
-                      and TV programs that are translated into more than 100 languages and distributed via 
-                      partnerships around the world.
-                    </p>
-                    
-                    <p className="text-base text-gray-400 leading-relaxed">
-                      Each year, thousands of independently run TEDx events bring people together to share ideas 
-                      and bridge divides in communities on every continent. Through the Audacious Project, TED 
-                      has helped catalyze more than $3 billion in funding for projects that seek to make the 
-                      world more beautiful, sustainable and just.
-                    </p>
-                  </div>
-                  
-                  <div className="space-y-6">
-                    <p className="text-base text-gray-400 leading-relaxed">
-                      In 2020, TED launched Countdown, an initiative to accelerate solutions to the climate 
-                      crisis and mobilize a movement for a net-zero future, and in 2023 TED launched TED Democracy 
-                      to spark a new kind of conversation focused on realistic pathways towards a more vibrant 
-                      and equitable future.
-                    </p>
-                    
-                    <div className="pt-6">
-                      <a 
-                        href="https://www.ted.com/about/programs-initiatives" 
-                        target="_blank" 
-                        rel="noopener noreferrer"
-                        className="inline-flex items-center gap-2 text-[#EB0028] hover:text-[#ff1a3d] transition-colors duration-300 font-medium"
-                      >
-                        View a full list of TED's programs and initiatives
-                        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                        </svg>
-                      </a>
-                    </div>
-                  </div>
-                  
-                  <div className="border-t border-[#1a1a1a] pt-8">
-                    <p className="text-base text-gray-400 mb-4">Follow TED on social media:</p>
-                    <div className="flex flex-wrap gap-4">
-                      {[
-                        { name: "Facebook", url: "https://www.facebook.com/TED" },
-                        { name: "Instagram", url: "https://www.instagram.com/ted" },
-                        { name: "LinkedIn", url: "https://www.linkedin.com/company/ted-conferences" },
-                        { name: "TikTok", url: "https://www.tiktok.com/@tedtoks" },
-                        { name: "X (Twitter)", url: "https://twitter.com/TEDTalks" }
-                      ].map((social) => (
-                        <a
-                          key={social.name}
-                          href={social.url}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="px-4 py-2 bg-[#0a0a0a] border border-[#1a1a1a] hover:border-[#EB0028]/50 transition-all duration-300 text-sm text-gray-300"
-                        >
-                          {social.name}
-                        </a>
-                      ))}
-                    </div>
-                  </div>
-                  
-                  <div className="pt-8">
-                    <div className="inline-flex items-center gap-4 bg-[#0a0a0a] border border-[#EB0028]/30 px-6 py-4 md:px-8 md:py-5">
-                      <div className="w-1 h-12 bg-[#EB0028]"></div>
-                      <p className="text-sm md:text-base text-gray-500 italic text-left">
-                        This independent TEDx event is operated
-                        <br className="hidden sm:block" />
-                        under license from TED
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </motion.div>
-            </div>
-          </div>
-        </section>
+        </div> 
+      
       </main>
 
       <Footer />
@@ -551,3 +491,18 @@ const AboutPage = () => {
 };
 
 export default AboutPage;
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+        

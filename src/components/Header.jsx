@@ -16,36 +16,37 @@ const Header = () => {
       label: 'Home',
       href: '/',
     },
-    {
-      label: 'Event',
-      href: '#',
+    // Event Menu - commented out for now
+    // {
+    //   label: 'Event',
+    //   href: '#',
 
-      megaMenu: {
-        sections: [
-          {
-            title: 'Event Information',
-            items: [
-              { label: 'About TEDxIIMT', href: '/about', desc: 'Learn about our mission and vision' },
-              { label: 'Organizing Team', href: '/team', desc: 'Meet the team behind TEDxIIMT' },
-              { label: 'Schedule', href: '/schedule', desc: 'Full day timeline and agenda' },
-              { label: 'Venue', href: '/venue', desc: 'Location and directions' },
-              { label: 'FAQ', href: '/faq',
-                 desc: 'Frequently asked questions' }
-            ]
-          },
-          {
-            title: 'Experience',
-            items: [
-              { label: 'What to Expect', href: '/what-to-expect', desc: 'Complete event experience guide' },
-              { label: 'Networking', href: '/networking', desc: 'Connect with innovators and changemakers' },
-              { label: 'Gallery', href: '/gallery', desc: 'Event photos and videos' },
-              { label: 'Live Streaming', href: '/live', desc: 'Watch talks online' },
-              { label: 'Accessibility', href: '/accessibility', desc: 'Inclusive event features' }
-            ]
-          }
-        ]
-      }
-    },
+    //   megaMenu: {
+    //     sections: [
+    //       {
+    //         title: 'Event Information',
+    //         items: [
+    //           { label: 'About TEDxIIMT', href: '/about', desc: 'Learn about our mission and vision' },
+    //           { label: 'Organizing Team', href: '/team', desc: 'Meet the team behind TEDxIIMT' },
+    //           { label: 'Schedule', href: '/schedule', desc: 'Full day timeline and agenda' },
+    //           { label: 'Venue', href: '/venue', desc: 'Location and directions' },
+    //           { label: 'FAQ', href: '/faq',
+    //              desc: 'Frequently asked questions' }
+    //         ]
+    //       },
+    //       {
+    //         title: 'Experience',
+    //         items: [
+    //           { label: 'What to Expect', href: '/what-to-expect', desc: 'Complete event experience guide' },
+    //           { label: 'Networking', href: '/networking', desc: 'Connect with innovators and changemakers' },
+    //           { label: 'Gallery', href: '/gallery', desc: 'Event photos and videos' },
+    //           { label: 'Live Streaming', href: '/live', desc: 'Watch talks online' },
+    //           { label: 'Accessibility', href: '/accessibility', desc: 'Inclusive event features' }
+    //         ]
+    //       }
+    //     ]
+    //   }
+    // },
     {
       label: 'Stories',
       href: '/blog',
@@ -57,19 +58,24 @@ const Header = () => {
     
     },
     {
-      label: 'Gallery',
-      href: '/gallery',
-    
+      label: 'Team',
+      href: '/team',
     },
-    {
-      label: 'Partners',
-      href: '#',
-      submenu: [
-        { label: 'Sponsors', href: '/sponsors' },
-        { label: 'Media Partners', href: '/media-partners' },
-        { label: 'Community Partners', href: '/community-partners' }
-      ]
-    }
+    // {
+    //   label: 'Gallery',
+    //   href: '/gallery',
+    
+    // },
+    // PARTNERS MENU - commented out for now
+    // {
+    //   label: 'Partners',
+    //   href: '#',
+    //   submenu: [
+    //     { label: 'Sponsors', href: '/sponsors' },
+    //     { label: 'Media Partners', href: '/media-partners' },
+    //     { label: 'Community Partners', href: '/community-partners' }
+    //   ]
+    // }
   ];
 
   // Scroll detection for header styling
@@ -259,7 +265,7 @@ const Header = () => {
                     </div>
                   </motion.a>
                   <motion.a
-                    href="/join-us/attendee"
+                    href="https://forms.gle/uwZAyzv84SB1WMo37"
                     className="flex items-center space-x-3 px-4 py-3 hover:bg-red-500/10 hover:text-red-400 transition-colors rounded-lg"
                     whileHover={{ x: 4 }}
                   >
@@ -349,20 +355,22 @@ const Header = () => {
             >
               Stories
             </a>
-            <a 
+            {/* MYSTERY */}
+            {/* <a 
               href="/mystery" 
               className="py-3 hover:text-red-500 transition border-b border-gray-800"
               onClick={closeMenu}
             >
               Mystery
-            </a>
-            <a 
+            </a> */}
+            {/* SPONSORS */}
+            {/* <a 
               href="/sponsors" 
               className="py-3 hover:text-red-500 transition border-b border-gray-800"
               onClick={closeMenu}
             >
               Sponsors
-            </a>
+            </a> */}
             <a 
               href="/speakers" 
               className="py-3 hover:text-red-500 transition border-b border-gray-800"
@@ -377,13 +385,14 @@ const Header = () => {
             >
               Team
             </a>
-            <a 
+            {/* Gallery */}
+            {/* <a 
               href="/gallery" 
               className="py-3 hover:text-red-500 transition border-b border-gray-800"
               onClick={closeMenu}
             >
               Gallery
-            </a>
+            </a> */}
             <div className="border-b border-gray-800">
               <button
                 onClick={toggleJoinUs}
@@ -398,7 +407,7 @@ const Header = () => {
                 <div className="pl-4 pb-2">
                   <a href="/join-us/speaker" className="block py-2 text-sm hover:text-red-500 transition" onClick={closeMenu}>Speaker</a>
                   <a href="/join-us/sponsor" className="block py-2 text-sm hover:text-red-500 transition" onClick={closeMenu}>Sponsor</a>
-                  <a href="/join-us/attendee" className="block py-2 text-sm hover:text-red-500 transition" onClick={closeMenu}>Attendee</a>
+                  <a href="https://forms.gle/uwZAyzv84SB1WMo37" className="block py-2 text-sm hover:text-red-500 transition" onClick={closeMenu}>Attendee</a>
                 </div>
               )}
             </div>

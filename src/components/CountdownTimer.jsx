@@ -1,16 +1,18 @@
 import React, { useState, useEffect } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion } from 'framer-motion';
 
-const CountdownTimer = ({ targetDate = '2025-03-15T10:00:00' }) => {
+const CountdownTimer = ({ targetDate = '2025-11-11T10:00:00' }) => {
   const [timeLeft, setTimeLeft] = useState({
     days: 0,
     hours: 0,
     minutes: 0,
     seconds: 0
   });
-  const [isVisible, setIsVisible] = useState(false);
+  const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
+    setMounted(true);
+    
     const timer = setInterval(() => {
       const now = new Date().getTime();
       const target = new Date(targetDate).getTime();
@@ -23,186 +25,258 @@ const CountdownTimer = ({ targetDate = '2025-03-15T10:00:00' }) => {
           minutes: Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60)),
           seconds: Math.floor((difference % (1000 * 60)) / 1000)
         });
-        setIsVisible(true);
-      } else {
-        setIsVisible(false);
       }
     }, 1000);
 
     return () => clearInterval(timer);
   }, [targetDate]);
 
-  // Gestalt Principle: Similarity - consistent styling for time units
-  const TimeUnit = ({ value, label, delay = 0 }) => (
-    <motion.div
-      className="flex flex-col items-center justify-center bg-gradient-to-br from-red-600/20 to-red-800/20 backdrop-blur-sm rounded-2xl p-4 sm:p-6 border border-red-500/30 hover:border-red-500/60 transition-all duration-300 group"
-      initial={{ opacity: 0, scale: 0.8, y: 50 }}
-      animate={{ opacity: 1, scale: 1, y: 0 }}
-      transition={{ 
-        duration: 0.6, 
-        delay: delay,
-        type: "spring",
-        stiffness: 100 
-      }}
-      whileHover={{ 
-        scale: 1.05,
-        y: -5
-      }}
-      // Fitts's Law: Larger touch targets for better usability
-      style={{ minHeight: '100px', minWidth: '80px' }}
-    >
-      {/* Number with Von Restorff Effect - making numbers stand out */}
-      <motion.div
-        className="text-3xl sm:text-4xl lg:text-5xl font-bold text-red-400 group-hover:text-red-300 transition-colors leading-none"
-        key={value} // Key change triggers animation
-        initial={{ scale: 1.2, opacity: 0 }}
-        animate={{ scale: 1, opacity: 1 }}
-        transition={{ duration: 0.3 }}
-      >
-        {String(value).padStart(2, '0')}
-      </motion.div>
-      
-      {/* Label with consistent typography */}
-      <div className="text-xs sm:text-sm uppercase tracking-wider text-gray-300 group-hover:text-white transition-colors mt-2 font-medium">
-        {label}
-      </div>
-      
-      {/* Decorative pulse effect for seconds */}
-      {label === 'Seconds' && (
-        <motion.div
-          className="absolute inset-0 rounded-2xl border-2 border-red-500/50"
-          animate={{ 
-            scale: [1, 1.1, 1],
-            opacity: [0.5, 0, 0.5]
-          }}
-          transition={{
-            duration: 1,
-            repeat: Infinity,
-            ease: "easeInOut"
-          }}
-        />
-      )}
-    </motion.div>
-  );
+  // Analog-inspired circular progress ring matching the black theme
+  const CircularTimer = ({ value, max, label, delay = 0, index }) => {
+    // Responsive radius - smaller on mobile
+    const radiusMobile = 45;      // Mobile
+    const radiusTablet = 55;      // Tablet
+    const radiusDesktop = 65;     // Desktop
+    
+    // Use desktop radius for calculations (SVG viewport handles scaling)
+    const radius = 65;
+    const circumference = 2 * Math.PI * radius;
+    const progress = (value / max) * circumference;
+    const offset = circumference - progress;
+    
+    // Alternating colors for visual interest
+    const isRed = index % 2 === 0;
+    const color = isRed ? "#EB0028" : "#FFFFFF";
 
-  if (!isVisible) return null;
+    return (
+      <div className="relative flex flex-col items-center group flex-shrink-0">
+        {/* SVG Circle - Analog clock inspiration - Better mobile sizing */}
+        <div className="relative w-20 h-20 xs:w-24 xs:h-24 sm:w-32 sm:h-32 md:w-40 md:h-40 lg:w-44 lg:h-44">
+          <svg className="transform -rotate-90 w-full h-full" viewBox="0 0 176 176">
+            {/* Outer glow ring */}
+            <circle
+              cx="50%"
+              cy="50%"
+              r={radius + 5}
+              stroke={color}
+              strokeWidth="0.5"
+              fill="none"
+              opacity="0.1"
+            />
+            
+            {/* Background track */}
+            <circle
+              cx="50%"
+              cy="50%"
+              r={radius}
+              stroke="#333333"
+              strokeWidth="2"
+              fill="none"
+              opacity="0.3"
+            />
+            
+            {/* Clock markers (12 dots) - inspired by rangoli */}
+            {[...Array(12)].map((_, i) => {
+              const angle = (i * 30 - 90) * (Math.PI / 180);
+              const dotRadius = radius + 8;
+              const x = 88 + dotRadius * Math.cos(angle);
+              const y = 88 + dotRadius * Math.sin(angle);
+              return (
+                <circle
+                  key={i}
+                  cx={x}
+                  cy={y}
+                  r="1.5"
+                  fill={color}
+                  opacity="0.4"
+                />
+              );
+            })}
+            
+            {/* Progress circle with smooth continuous animation */}
+            <circle
+              cx="50%"
+              cy="50%"
+              r={radius}
+              stroke={color}
+              strokeWidth="2.5"
+              fill="none"
+              strokeLinecap="round"
+              strokeDasharray={circumference}
+              strokeDashoffset={offset}
+              style={{
+                filter: `drop-shadow(0 0 8px ${color}40)`,
+                transition: 'stroke-dashoffset 1s linear',
+                willChange: 'stroke-dashoffset'
+              }}
+            />
+            
+            {/* Inner decorative circle */}
+            <circle
+              cx="50%"
+              cy="50%"
+              r={radius - 10}
+              stroke={color}
+              strokeWidth="0.5"
+              fill="none"
+              opacity="0.15"
+            />
+          </svg>
+
+          {/* Center content - number display - completely stable, no flickering */}
+          <div className="absolute inset-0 flex flex-col items-center justify-center">
+            <span
+              className="text-xl xs:text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-light tracking-tight"
+              style={{ 
+                color, 
+                fontVariantNumeric: 'tabular-nums',
+                fontFeatureSettings: '"tnum"',
+                willChange: 'contents'
+              }}
+            >
+              {String(value).padStart(2, '0')}
+            </span>
+          </div>
+
+          {/* Hover effect - subtle pulse */}
+          <div
+            className="absolute inset-0 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            style={{
+              background: `radial-gradient(circle, ${color}10, transparent 70%)`
+            }}
+          />
+        </div>
+
+        {/* Label with elegant spacing */}
+        <p 
+          className="mt-1.5 xs:mt-2 sm:mt-3 md:mt-4 text-[0.6rem] xs:text-[0.65rem] sm:text-xs md:text-sm tracking-[0.15em] xs:tracking-[0.2em] sm:tracking-[0.25em] uppercase font-light"
+          style={{ color: `${color}CC` }}
+        >
+          {label}
+        </p>
+      </div>
+    );
+  };
+
+  if (!mounted) {
+    return (
+      <section className="relative bg-black text-white py-16 md:py-24 lg:py-32">
+        <div className="container mx-auto px-6">
+          <div className="h-96" /> {/* Prevent layout shift */}
+        </div>
+      </section>
+    );
+  }
 
   return (
     <section 
-      className="relative py-16 sm:py-20 bg-gradient-to-br from-black via-gray-900 to-red-950/20 overflow-hidden"
-      // Accessibility
+      className="relative bg-black text-white py-16 md:py-24 lg:py-32 overflow-hidden"
       aria-labelledby="countdown-title"
       role="timer"
     >
-      {/* Background Elements - Aesthetic-Usability Effect */}
-      <div className="absolute inset-0">
+      {/* Subtle background effects matching the theme */}
+      <div className="absolute inset-0 opacity-30">
         <motion.div 
-          className="absolute top-1/4 left-1/4 w-96 h-96 bg-red-500/10 rounded-full blur-3xl"
+          className="absolute top-1/4 left-1/4 w-96 h-96 bg-[#EB0028] rounded-full blur-[120px]"
           animate={{ 
             scale: [1, 1.2, 1],
-            opacity: [0.3, 0.5, 0.3]
+            opacity: [0.1, 0.15, 0.1]
           }}
           transition={{
-            duration: 4,
+            duration: 8,
             repeat: Infinity,
             ease: "easeInOut"
           }}
         />
         <motion.div 
-          className="absolute bottom-1/4 right-1/4 w-72 h-72 bg-blue-500/10 rounded-full blur-3xl"
+          className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-white rounded-full blur-[100px]"
           animate={{ 
             scale: [1.2, 1, 1.2],
-            opacity: [0.5, 0.3, 0.5]
+            opacity: [0.05, 0.08, 0.05]
           }}
           transition={{
-            duration: 3,
+            duration: 10,
             repeat: Infinity,
             ease: "easeInOut",
-            delay: 1
+            delay: 2
           }}
         />
       </div>
 
-      <div className="container mx-auto px-4 sm:px-6 relative z-10">
-        {/* Section Header - Progressive Disclosure */}
-        <motion.div 
-          className="text-center mb-12"
+      {/* Subtle grid pattern - jaali inspired */}
+      <div className="absolute inset-0 opacity-[0.02]">
+        <div className="absolute inset-0" style={{
+          backgroundImage: `radial-gradient(circle at 1px 1px, #EB0028 0.5px, transparent 0)`,
+          backgroundSize: '48px 48px'
+        }} />
+      </div>
+
+      <div className="container mx-auto px-6 md:px-12 relative z-10">
+        
+        {/* Minimal Header matching the theme */}
+        <motion.div
           initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
+          animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
+          className="text-center mb-16 md:mb-20 lg:mb-24"
         >
-          <h2 
+          <motion.h2 
             id="countdown-title"
-            className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4"
+            className="text-4xl md:text-5xl lg:text-7xl font-light text-white mb-6 tracking-tight leading-none"
           >
-            Event Starts <span className="text-red-500">In</span>
-          </h2>
-          <p className="text-lg sm:text-xl text-gray-300 max-w-2xl mx-auto">
-            Don't miss out on this transformative experience
-          </p>
+            Time Until<br />
+            <span className="text-[#EB0028] font-normal">Ideas Worth Spreading</span>
+          </motion.h2>
+          
+          {/* Minimal divider */}
+          <motion.div 
+            className="w-16 h-[1px] bg-[#EB0028] mx-auto"
+            initial={{ width: 0 }}
+            animate={{ width: 64 }}
+            transition={{ duration: 0.8, delay: 0.3 }}
+          />
         </motion.div>
 
-        {/* Countdown Display - Gestalt Principle: Proximity */}
-        <div className="flex flex-wrap justify-center items-center gap-4 sm:gap-6 lg:gap-8 max-w-4xl mx-auto">
-          <TimeUnit value={timeLeft.days} label="Days" delay={0.1} />
-          <TimeUnit value={timeLeft.hours} label="Hours" delay={0.2} />
-          <TimeUnit value={timeLeft.minutes} label="Minutes" delay={0.3} />
-          <TimeUnit value={timeLeft.seconds} label="Seconds" delay={0.4} />
+        {/* Circular Timer Grid - single horizontal line with proper mobile spacing */}
+        <div className="overflow-x-auto pb-4 mb-16 md:mb-20 -mx-4 px-4">
+          <div className="flex justify-center items-center gap-2 xs:gap-3 sm:gap-6 md:gap-8 lg:gap-12 xl:gap-16 min-w-max mx-auto">
+            <CircularTimer value={timeLeft.days} max={365} label="Days" delay={0.1} index={0} />
+            <CircularTimer value={timeLeft.hours} max={24} label="Hours" delay={0.2} index={1} />
+            <CircularTimer value={timeLeft.minutes} max={60} label="Minutes" delay={0.3} index={2} />
+            <CircularTimer value={timeLeft.seconds} max={60} label="Seconds" delay={0.4} index={3} />
+          </div>
         </div>
 
-        {/* Urgency Message - Von Restorff Effect */}
+        {/* Event Details - subtle and elegant */}
         <motion.div
-          className="text-center mt-12"
           initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8, delay: 0.5 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1, delay: 0.6 }}
+          className="text-center"
         >
-          <div className="inline-flex items-center space-x-2 bg-yellow-500/20 border border-yellow-500/30 rounded-full px-6 py-3 mb-6">
-            <motion.div
-              animate={{ scale: [1, 1.2, 1] }}
-              transition={{ duration: 1, repeat: Infinity }}
-              className="text-yellow-400"
-            >
-              ⚡
-            </motion.div>
-            <span className="text-yellow-300 font-medium">Limited seats available</span>
+          {/* Date and venue */}
+          <p className="text-gray-400 text-sm md:text-base tracking-wider uppercase font-light mb-6">
+            November 11, 2025 • IIMT University, Meerut
+          </p>
+
+          {/* Decorative separator - bindis inspired */}
+          <div className="flex items-center justify-center gap-2 mb-6">
+            <div className="w-1.5 h-1.5 rounded-full bg-[#EB0028]" />
+            <div className="w-1 h-1 rounded-full bg-white opacity-50" />
+            <div className="w-1.5 h-1.5 rounded-full bg-[#EB0028]" />
           </div>
 
-          {/* CTA Buttons - Fitts's Law compliant sizing */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <motion.button
-              className="bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 text-white px-8 py-4 rounded-full text-lg font-semibold shadow-xl hover:shadow-2xl transition-all duration-300 min-w-[200px]"
-              whileHover={{ scale: 1.05, y: -2 }}
-              whileTap={{ scale: 0.95 }}
-              // Accessibility
-              aria-label="Get tickets for TEDxIIMT event"
-            >
-              Get Tickets Now
-            </motion.button>
-            
-            <motion.button
-              className="border-2 border-red-500 text-red-400 hover:bg-red-500 hover:text-white px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300 min-w-[200px]"
-              whileHover={{ scale: 1.05, y: -2 }}
-              whileTap={{ scale: 0.95 }}
-              aria-label="Set reminder for TEDxIIMT event"
-            >
-              Set Reminder
-            </motion.button>
-          </div>
+          {/* Subtle message */}
+          <motion.p
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1, delay: 0.8 }}
+            className="text-gray-500 text-base md:text-lg font-light max-w-lg mx-auto leading-relaxed"
+          >
+            Mark your calendar for an unforgettable experience
+          </motion.p>
         </motion.div>
 
-        {/* Event Details - Additional Context */}
-        <motion.div
-          className="text-center mt-8 text-gray-400 text-sm"
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8, delay: 0.7 }}
-        >
-          <p>March 15, 2025 • 10:00 AM • IIMT University, Greater Noida</p>
-        </motion.div>
       </div>
     </section>
   );
