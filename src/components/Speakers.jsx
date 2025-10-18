@@ -30,7 +30,7 @@ const Speakers = ({ isHomepage = false }) => {
             Our <span className="speakers-title-highlight">Speakers</span>
           </h2>
           <p className="speakers-subtitle">
-            Meet the brilliant minds sharing their ideas at TEDxIIMT
+            Meet the brilliant minds sharing their ideas at TEDxIIMT UNIVERSITY
           </p>
         </motion.div>
 

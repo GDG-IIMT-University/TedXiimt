@@ -459,12 +459,12 @@ const CommunityPartnersPage = () => {
             >
               <h2 className="text-4xl font-bold mb-6">Join Our Community</h2>
               <p className="text-xl text-gray-300 mb-8 max-w-3xl mx-auto">
-                Ready to partner with TEDxIIMT? Let's explore how we can create impact together.
+                Ready to partner with TEDxIIMT UNIVERSITY? Let's explore how we can create impact together.
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <motion.a
-                  href="mailto:partnerships@tedxiimt.com"
+                  href="mailto:partnerships@tedxIIMT UNIVERSITY.com"
                   className="bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 text-white px-8 py-4 rounded-full text-lg font-semibold shadow-xl hover:shadow-2xl transition-all duration-300 inline-flex items-center justify-center space-x-2"
                   whileHover={{ scale: 1.05, y: -2 }}
                   whileTap={{ scale: 0.98 }}

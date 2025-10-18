@@ -52,7 +52,7 @@ const ValueProposition = () => {
             id="value-prop-title"
             className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 leading-tight text-white"
           >
-            Why Attend <span className="text-[#EB0028]">TEDxIIMT University?</span>
+            Why Attend <span className="text-[#EB0028]">TEDxIIMT UNIVERSITY?</span>
           </h2>
           <p className="text-xl sm:text-2xl text-gray-300 max-w-4xl mx-auto leading-relaxed">
             Join us for a transformative experience that will challenge your thinking, 
@@ -158,7 +158,7 @@ const ValueProposition = () => {
               href="https://forms.gle/u9uyz84gMPZZiSYe9" 
               target="_blank"
               className="inline-block bg-[#EB0028] hover:bg-[#ff1a3d] text-white font-bold px-8 py-4 md:px-12 md:py-5 text-lg transition-all duration-300 min-w-[250px]"
-              aria-label="Reserve your seat at TEDxIIMT University"
+              aria-label="Reserve your seat at TEDxIIMT UNIVERSITY"
             >
               Reserve Your Seat Now
             </a>

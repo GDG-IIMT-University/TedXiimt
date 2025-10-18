@@ -256,7 +256,7 @@ const CountdownTimer = ({ targetDate = '2025-11-11T10:00:00' }) => {
         >
           {/* Date and venue */}
           <p className="text-gray-400 text-sm md:text-base tracking-wider uppercase font-light mb-6">
-            November 11, 2025 • IIMT University, Meerut
+            November 11, 2025 • IIMT UNIVERSITY, Meerut
           </p>
 
           {/* Decorative separator - bindis inspired */}

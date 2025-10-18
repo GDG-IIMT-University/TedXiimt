@@ -1,4 +1,4 @@
-// TEDxIIMT 2025 Speakers Data
+// TEDxIIMT UNIVERSITY 2025 Speakers Data
 const speakersData = [
   {
     id: 1,
@@ -30,28 +30,28 @@ const speakersData = [
   {
     id: 4,
     name: "Shri Yogesh Mohan Ji Gupta",
-    designation: "Chancellor, IIMT University Meerut",
-    image: "https://iimtu.edu.in/uploads/images/16656521341.jpg",
-    shortBio: "Chancellor of IIMT University, a NAAC 'A' grade accredited private university established in 2016, recognized by UGC under sections 2(f) & 12B.",
-    detailedBio: "Shri Yogesh Mohan Ji Gupta serves as the Chancellor of IIMT University, Meerut. IIMT University is a private university established in 2016, located at 'O' Pocket, Ganga Nagar, Meerut, U.P. The university is NAAC accredited with 'A' grade, and is recognized by the University Grants Commission (UGC) under sections 2(f) & 12B. Under his leadership, the university has grown to provide quality education across multiple disciplines while maintaining high academic standards.",
+    designation: "Chancellor, IIMT UNIVERSITY Meerut",
+    image: "https://IIMT UNIVERSITYu.edu.in/uploads/images/16656521341.jpg",
+    shortBio: "Chancellor of IIMT UNIVERSITY, a NAAC 'A' grade accredited private university established in 2016, recognized by UGC under sections 2(f) & 12B.",
+    detailedBio: "Shri Yogesh Mohan Ji Gupta serves as the Chancellor of IIMT UNIVERSITY, Meerut. IIMT UNIVERSITY is a private university established in 2016, located at 'O' Pocket, Ganga Nagar, Meerut, U.P. The university is NAAC accredited with 'A' grade, and is recognized by the University Grants Commission (UGC) under sections 2(f) & 12B. Under his leadership, the university has grown to provide quality education across multiple disciplines while maintaining high academic standards.",
     quote: "Education is the foundation upon which we build our future."
   },
   {
     id: 5,
     name: "Dr. Mayank Agarwal",
-    designation: "Pro-Chancellor, IIMT University Meerut",
-    image: "https://iimtu.edu.in/uploads/images/mayank-agarwal.jpg",
-    shortBio: "Dr. Mayank Agarwal is the Pro-Chancellor of IIMT University, Meerut, and Managing Director of the IIMT Group, devoted to advancing education, values, and social welfare through leadership in academia.",
-    detailedBio: "Dr. Mayank Agarwal is a visionary academic leader serving as Pro-Chancellor of IIMT University, Meerut, and as Managing Director of the IIMT Group of Colleges. Under his leadership, IIMT has expanded its reach in education, integrated values-based learning, and launched initiatives aimed at community development. His stewardship in programs such as the Adult Literacy Mission (for villages in Meerut) reflects his commitment to social causes beyond academia. He fosters an environment that balances technological advancement with ethical grounding, preparing students not just for careers but for meaningful contributions to society.",
+    designation: "Pro-Chancellor, IIMT UNIVERSITY Meerut",
+    image: "https://IIMT UNIVERSITYu.edu.in/uploads/images/mayank-agarwal.jpg",
+    shortBio: "Dr. Mayank Agarwal is the Pro-Chancellor of IIMT UNIVERSITY, Meerut, and Managing Director of the IIMT UNIVERSITY Group, devoted to advancing education, values, and social welfare through leadership in academia.",
+    detailedBio: "Dr. Mayank Agarwal is a visionary academic leader serving as Pro-Chancellor of IIMT UNIVERSITY, Meerut, and as Managing Director of the IIMT UNIVERSITY Group of Colleges. Under his leadership, IIMT UNIVERSITY has expanded its reach in education, integrated values-based learning, and launched initiatives aimed at community development. His stewardship in programs such as the Adult Literacy Mission (for villages in Meerut) reflects his commitment to social causes beyond academia. He fosters an environment that balances technological advancement with ethical grounding, preparing students not just for careers but for meaningful contributions to society.",
     quote: "Education must uplift both knowledge and compassion."
   },
   {
     id: 6,
     name: "Dr. Akshay Raj",
-    designation: "Nodal Officer & Research Associate, IIMT University",
-    image: "https://iimtu.edu.in/uploads/images/research-team.jpg",
-    shortBio: "Dr. Akshay Raj is Research Associate and Nodal Officer at IIMT University, Meerut, deeply involved in innovation, academic excellence, and facilitating online education through NPTEL.",
-    detailedBio: "Dr. Akshay Raj plays a critical role in bridging academia and innovation at IIMT University, Meerut. As a Research Associate in the R&D cell and SPOC (Single Point of Contact) for the university's NPTEL Local Chapter since July 2017, he has helped promote online learning, course participation, and faculty/student engagement in digital education initiatives. In addition, as the Nodal Officer for ARIIA (Atal Ranking of Institutions on Innovation Achievements), he oversees the institution's efforts in innovation, start-ups and entrepreneurship rankings, helping build an environment that supports student-led projects and institutional growth.",
+    designation: "Nodal Officer & Research Associate, IIMT UNIVERSITY",
+    image: "https://IIMT UNIVERSITYu.edu.in/uploads/images/research-team.jpg",
+    shortBio: "Dr. Akshay Raj is Research Associate and Nodal Officer at IIMT UNIVERSITY, Meerut, deeply involved in innovation, academic excellence, and facilitating online education through NPTEL.",
+    detailedBio: "Dr. Akshay Raj plays a critical role in bridging academia and innovation at IIMT UNIVERSITY, Meerut. As a Research Associate in the R&D cell and SPOC (Single Point of Contact) for the university's NPTEL Local Chapter since July 2017, he has helped promote online learning, course participation, and faculty/student engagement in digital education initiatives. In addition, as the Nodal Officer for ARIIA (Atal Ranking of Institutions on Innovation Achievements), he oversees the institution's efforts in innovation, start-ups and entrepreneurship rankings, helping build an environment that supports student-led projects and institutional growth.",
     quote: "Innovation and education thrive where commitment meets opportunity."
   },
   {

@@ -6,7 +6,7 @@ const AboutUs = () => {
     <section id="about" className="w-full px-6 py-16 bg-[#0f0f0f] text-white">
       <div className="max-w-6xl mx-auto space-y-16">
         
-        {/* About TEDxIIMT */}
+        {/* About TEDxIIMT UNIVERSITY */}
         <div>
           <motion.h2
             initial={{ opacity: 0, y: 30 }}
@@ -15,7 +15,7 @@ const AboutUs = () => {
             transition={{ duration: 0.8 }}
             className="text-3xl md:text-4xl font-bold mb-10 text-center"
           >
-            About <span className="text-red-500">TEDxIIMT</span>
+            About <span className="text-red-500">TEDxIIMT UNIVERSITY</span>
           </motion.h2>
 
           <div className="grid gap-12 md:grid-cols-2 items-center">
@@ -27,7 +27,7 @@ const AboutUs = () => {
               className="space-y-6"
             >
               <p className="text-gray-300 text-lg leading-relaxed">
-                TEDxIIMT is an independently organized TED event hosted at IIMT University, 
+                TEDxIIMT UNIVERSITY is an independently organized TED event hosted at IIMT UNIVERSITY, 
                 bringing together brilliant minds, innovative thinkers, and passionate changemakers 
                 to share ideas worth spreading.
               </p>
@@ -58,7 +58,7 @@ const AboutUs = () => {
               <div className="bg-gradient-to-br from-red-500/20 to-transparent rounded-2xl p-8 border border-white/10">
                 <div className="text-center space-y-6">
                   <div className="text-6xl font-bold text-red-500">TEDx</div>
-                  <div className="text-2xl font-light text-white">IIMT University</div>
+                  <div className="text-2xl font-light text-white">IIMT UNIVERSITY</div>
                   <p className="text-gray-300 italic">Ideas Worth Spreading</p>
                   <div className="grid grid-cols-3 gap-4 mt-8">
                     <div className="text-center">

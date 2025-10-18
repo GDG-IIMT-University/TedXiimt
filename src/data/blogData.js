@@ -1,13 +1,13 @@
-// Blog posts data for TEDxIIMT
+// Blog posts data for TEDxIIMT UNIVERSITY
 export const blogPosts = [
   {
     id: 1,
     title: "Announcing Our First Speaker: Innovation in Technology",
     slug: "first-speaker-announcement",
     category: "Speaker Announcement",
-    excerpt: "We're thrilled to announce our first confirmed speaker for TEDxIIMT - a visionary technologist who's revolutionizing how we interact with AI.",
+    excerpt: "We're thrilled to announce our first confirmed speaker for TEDxIIMT UNIVERSITY - a visionary technologist who's revolutionizing how we interact with AI.",
     content: `
-      <p>We are absolutely thrilled to announce our first confirmed speaker for TEDxIIMT University! This remarkable individual has been at the forefront of technological innovation, particularly in the realm of artificial intelligence and human-computer interaction.</p>
+      <p>We are absolutely thrilled to announce our first confirmed speaker for TEDxIIMT UNIVERSITY! This remarkable individual has been at the forefront of technological innovation, particularly in the realm of artificial intelligence and human-computer interaction.</p>
       
       <p>With over a decade of experience in Silicon Valley and now leading groundbreaking research in India, our speaker will share insights on "The Future of Human-AI Collaboration" - a topic that couldn't be more relevant as we navigate an increasingly digital world.</p>
       
@@ -15,9 +15,9 @@ export const blogPosts = [
       
       <p>Stay tuned for the full reveal of our speaker lineup - this is just the beginning of what promises to be an unforgettable event!</p>
       
-      <p><em>Follow us on social media for the latest updates and behind-the-scenes content as we prepare for TEDxIIMT.</em></p>
+      <p><em>Follow us on social media for the latest updates and behind-the-scenes content as we prepare for TEDxIIMT UNIVERSITY.</em></p>
     `,
-    author: "TEDxIIMT Team",
+    author: "TEDxIIMT UNIVERSITY Team",
     publishDate: "2025-09-28",
     readTime: "3 min read",
     tags: ["speakers", "technology", "AI", "innovation"],
@@ -43,9 +43,9 @@ export const blogPosts = [
         <li>Empathy fuels connection while sympathy drives disconnection</li>
       </ul>
       
-      <p>As we prepare for TEDxIIMT, we're reminded of why these conversations matter. Ideas that challenge us, make us uncomfortable, and push us to grow are exactly the kind of "ideas worth spreading" that TED was founded on.</p>
+      <p>As we prepare for TEDxIIMT UNIVERSITY, we're reminded of why these conversations matter. Ideas that challenge us, make us uncomfortable, and push us to grow are exactly the kind of "ideas worth spreading" that TED was founded on.</p>
       
-      <p>What TED Talk has had the biggest impact on your life? Share with us in the comments or on social media using #TEDxIIMT!</p>
+      <p>What TED Talk has had the biggest impact on your life? Share with us in the comments or on social media using #TEDxIIMT UNIVERSITY!</p>
     `,
     author: "Sarah Chen, Communications Director",
     publishDate: "2025-09-25",
@@ -56,14 +56,14 @@ export const blogPosts = [
   },
   {
     id: 3,
-    title: "Behind the Scenes: Preparing for TEDxIIMT",
+    title: "Behind the Scenes: Preparing for TEDxIIMT UNIVERSITY",
     slug: "behind-the-scenes-preparation",
     category: "Event Updates",
     excerpt: "Take a peek behind the curtain as our team works tirelessly to create an unforgettable TEDx experience.",
     content: `
       <p>The magic of a TEDx event doesn't happen overnight. Over the past few months, our dedicated team of volunteers has been working around the clock to bring you an experience that will inspire, challenge, and connect our community.</p>
       
-      <h3>What Goes Into Planning TEDxIIMT?</h3>
+      <h3>What Goes Into Planning TEDxIIMT UNIVERSITY?</h3>
       
       <p><strong>Speaker Curation:</strong> Our speaker selection committee has reviewed over 200 applications and nominations. We're looking for speakers who don't just share information, but transform perspectives.</p>
       
@@ -71,7 +71,7 @@ export const blogPosts = [
       
       <p><strong>Community Building:</strong> This isn't just about the day of the event. We're building a community of curious minds who will continue these conversations long after the last speaker leaves the stage.</p>
       
-      <p><strong>Student Involvement:</strong> What makes TEDxIIMT special is our commitment to student voices. Over 50 students are involved in various aspects of production, from event management to social media storytelling.</p>
+      <p><strong>Student Involvement:</strong> What makes TEDxIIMT UNIVERSITY special is our commitment to student voices. Over 50 students are involved in various aspects of production, from event management to social media storytelling.</p>
       
       <p>The energy in our planning meetings is infectious. Everyone brings unique skills and perspectives, and watching this vision come together has been incredibly rewarding.</p>
       
@@ -91,7 +91,7 @@ export const blogPosts = [
     category: "Ideas & Innovation",
     excerpt: "Exploring the fascinating research behind how ideas spread through communities and why some ideas stick while others fade away.",
     content: `
-      <p>Have you ever wondered why some ideas catch fire while others fizzle out? As we prepare for TEDxIIMT, we've been diving deep into the science behind viral ideas and meaningful change.</p>
+      <p>Have you ever wondered why some ideas catch fire while others fizzle out? As we prepare for TEDxIIMT UNIVERSITY, we've been diving deep into the science behind viral ideas and meaningful change.</p>
       
       <p>Malcolm Gladwell's "The Tipping Point" introduced many of us to the concept of how small changes can make a big difference. But recent research has revealed even more fascinating insights about how ideas spread.</p>
       
@@ -105,7 +105,7 @@ export const blogPosts = [
       
       <p><strong>Stories Over Statistics:</strong> Our brains are wired for narrative. A compelling story will always beat a list of facts.</p>
       
-      <p>This research shapes everything we do at TEDxIIMT. From speaker selection to event design, we're creating conditions for ideas to not just be heard, but to truly spread and create lasting impact.</p>
+      <p>This research shapes everything we do at TEDxIIMT UNIVERSITY. From speaker selection to event design, we're creating conditions for ideas to not just be heard, but to truly spread and create lasting impact.</p>
       
       <p>What idea has changed your life? We'd love to hear your story as we prepare to share new ones at our event.</p>
     `,
@@ -121,9 +121,9 @@ export const blogPosts = [
     title: "Student Spotlight: Young Voices, Big Ideas",
     slug: "student-spotlight-young-voices",
     category: "Community",
-    excerpt: "Meet the passionate student organizers who are helping to shape TEDxIIMT and bringing fresh perspectives to our event.",
+    excerpt: "Meet the passionate student organizers who are helping to shape TEDxIIMT UNIVERSITY and bringing fresh perspectives to our event.",
     content: `
-      <p>One of the most exciting aspects of TEDxIIMT is the incredible energy and fresh perspectives that our student team brings to every aspect of the event. Today, we want to introduce you to some of the amazing students who are helping to make this vision a reality.</p>
+      <p>One of the most exciting aspects of TEDxIIMT UNIVERSITY is the incredible energy and fresh perspectives that our student team brings to every aspect of the event. Today, we want to introduce you to some of the amazing students who are helping to make this vision a reality.</p>
       
       <p><strong>Priya Singh, 3rd Year Computer Science:</strong> Leading our digital strategy, Priya has revolutionized how we engage with our online community. Her innovative approach to social media storytelling has already gained us recognition across university networks.</p>
       
@@ -137,7 +137,7 @@ export const blogPosts = [
       
       <p>We couldn't be more proud to work alongside these inspiring individuals. Their passion reminds us daily why TEDx exists: to amplify voices that need to be heard.</p>
     `,
-    author: "TEDxIIMT Team",
+    author: "TEDxIIMT UNIVERSITY Team",
     publishDate: "2025-09-18",
     readTime: "4 min read",
     tags: ["students", "community", "leadership", "youth"],

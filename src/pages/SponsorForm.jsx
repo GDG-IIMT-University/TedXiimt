@@ -106,7 +106,7 @@ const SponsorForm = () => {
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
             <h1 className="text-4xl md:text-5xl font-bold mb-4">
-              Partner with <span className="text-red-500">TEDxIIMT</span>
+              Partner with <span className="text-red-500">TEDxIIMT UNIVERSITY</span>
             </h1>
             <p className="text-xl text-gray-300 max-w-2xl mx-auto">
               Join us in spreading ideas worth sharing and make a lasting impact
@@ -116,7 +116,7 @@ const SponsorForm = () => {
           <FormComponent
             formType="Sponsor"
             title="Sponsorship Application"
-            description="Partner with TEDxIIMT to reach an engaged audience of innovators, thinkers, and changemakers. Let's create something extraordinary together."
+            description="Partner with TEDxIIMT UNIVERSITY to reach an engaged audience of innovators, thinkers, and changemakers. Let's create something extraordinary together."
             fields={sponsorFields}
           />
         </div>

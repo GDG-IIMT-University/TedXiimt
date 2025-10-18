@@ -33,7 +33,7 @@ const WhatToExpectPage = () => {
                 </h1>
                 
                 <p className="text-lg sm:text-xl md:text-2xl text-gray-400 max-w-3xl mx-auto leading-relaxed px-4">
-                  Your guide to experiencing TEDxIIMT—from the moment you arrive to the connections you'll make
+                  Your guide to experiencing TEDxIIMT UNIVERSITY—from the moment you arrive to the connections you'll make
                 </p>
               </motion.div>
             </div>
@@ -75,7 +75,7 @@ const WhatToExpectPage = () => {
                     <h3 className="text-2xl md:text-3xl font-bold mb-4">Event Format</h3>
                     <div className="space-y-4 text-gray-300">
                       <p className="leading-relaxed">
-                        TEDxIIMT follows the classic TED format—short, powerful talks delivered by speakers 
+                        TEDxIIMT UNIVERSITY follows the classic TED format—short, powerful talks delivered by speakers 
                         who are experts, innovators, and thought leaders in their fields.
                       </p>
                       <ul className="space-y-3 ml-4">
@@ -123,7 +123,7 @@ const WhatToExpectPage = () => {
                     <h3 className="text-xl md:text-2xl font-bold mb-4 text-[#EB0028]">Venue</h3>
                     <div className="space-y-4 text-gray-300">
                       <p className="leading-relaxed">
-                        <strong className="text-white">IIMT University</strong><br />
+                        <strong className="text-white">IIMT UNIVERSITY</strong><br />
                         'O' Pocket, Ganga Nagar<br />
                         Meerut, Uttar Pradesh
                       </p>

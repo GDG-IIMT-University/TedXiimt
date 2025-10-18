@@ -25,7 +25,7 @@ const TeamPage = () => {
       bio: 'Dedicated to creating memorable experiences that inspire and transform.',
       responsibilities: ['Logistics', 'Coordination', 'Partnerships'],
       contact: {
-        email: 'team@tedxiimt.com',
+        email: 'team@tedxIIMT UNIVERSITY.com',
         linkedin: '#'
       }
     },
@@ -34,10 +34,10 @@ const TeamPage = () => {
       name: 'Team Member',
       role: 'Creative Director',
       image: '/api/placeholder/400/400',
-      bio: 'Bringing creative vision to every aspect of the TEDxIIMT experience.',
+      bio: 'Bringing creative vision to every aspect of the TEDxIIMT UNIVERSITY experience.',
       responsibilities: ['Design', 'Branding', 'Content Creation'],
       contact: {
-        email: 'creative@tedxiimt.com',
+        email: 'creative@tedxIIMT UNIVERSITY.com',
         linkedin: '#'
       }
     },
@@ -49,7 +49,7 @@ const TeamPage = () => {
       bio: 'Spreading ideas worth spreading through strategic marketing and outreach.',
       responsibilities: ['Social Media', 'PR', 'Audience Engagement'],
       contact: {
-        email: 'marketing@tedxiimt.com',
+        email: 'marketing@tedxIIMT UNIVERSITY.com',
         linkedin: '#'
       }
     },
@@ -61,7 +61,7 @@ const TeamPage = () => {
       bio: 'Ensuring flawless execution of every detail, big and small.',
       responsibilities: ['Venue Management', 'Technical Setup', 'Day-of Coordination'],
       contact: {
-        email: 'ops@tedxiimt.com',
+        email: 'ops@tedxIIMT UNIVERSITY.com',
         linkedin: '#'
       }
     },
@@ -73,7 +73,7 @@ const TeamPage = () => {
       bio: 'Discovering and nurturing speakers with ideas worth spreading.',
       responsibilities: ['Speaker Selection', 'Coaching', 'Content Review'],
       contact: {
-        email: 'speakers@tedxiimt.com',
+        email: 'speakers@tedxIIMT UNIVERSITY.com',
         linkedin: '#'
       }
     }
@@ -104,7 +104,7 @@ const TeamPage = () => {
               </h1>
               
               <p className="text-lg sm:text-xl md:text-2xl text-gray-400 leading-relaxed">
-                Meet the passionate individuals working behind the scenes to bring TEDxIIMT to life
+                Meet the passionate individuals working behind the scenes to bring TEDxIIMT UNIVERSITY to life
               </p>
             </motion.div>
           </div>
@@ -224,12 +224,12 @@ const TeamPage = () => {
                 </h2>
                 
                 <p className="text-lg md:text-xl text-gray-300 mb-8 leading-relaxed">
-                  Interested in being part of the TEDxIIMT organizing team? We're always looking for passionate individuals who want to help spread ideas worth spreading.
+                  Interested in being part of the TEDxIIMT UNIVERSITY organizing team? We're always looking for passionate individuals who want to help spread ideas worth spreading.
                 </p>
                 
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <a
-                    href="mailto:team@tedxiimt.com"
+                    href="mailto:team@tedxIIMT UNIVERSITY.com"
                     className="inline-block bg-[#EB0028] hover:bg-[#ff1a3d] text-white font-bold px-8 py-4 text-lg transition-all duration-300"
                   >
                     Get Involved

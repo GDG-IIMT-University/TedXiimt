@@ -1,9 +1,9 @@
-// Service Worker for TEDxIIMT Website
+// Service Worker for TEDxIIMT UNIVERSITY Website
 // Implements caching strategies for optimal performance
 
-const CACHE_NAME = 'tedxiimt-v1.0.0';
-const STATIC_CACHE_NAME = 'tedxiimt-static-v1.0.0';
-const DYNAMIC_CACHE_NAME = 'tedxiimt-dynamic-v1.0.0';
+const CACHE_NAME = 'tedxIIMT UNIVERSITY-v1.0.0';
+const STATIC_CACHE_NAME = 'tedxIIMT UNIVERSITY-static-v1.0.0';
+const DYNAMIC_CACHE_NAME = 'tedxIIMT UNIVERSITY-dynamic-v1.0.0';
 
 // Resources to cache immediately
 const STATIC_ASSETS = [

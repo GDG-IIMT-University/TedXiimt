@@ -28,12 +28,12 @@ const AboutPage = () => {
                 <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight">
                   About{' '}
                   <span className="text-[#EB0028] inline-block">
-                    TEDxIIMT University
+                    TEDxIIMT UNIVERSITY
                   </span>
                 </h1>
                 
                 <p className="text-lg sm:text-xl md:text-2xl text-gray-400 max-w-3xl mx-auto leading-relaxed px-4">
-                  A platform for ideas worth spreading, connecting minds, and inspiring change in the IIMT community
+                  A platform for ideas worth spreading, connecting minds, and inspiring change in the IIMT UNIVERSITY community
                 </p>
               </motion.div>
             </div>
@@ -80,7 +80,7 @@ const AboutPage = () => {
                   <div className="space-y-8 md:space-y-10">
                     <div className="space-y-6">
                       <p className="text-lg md:text-xl text-gray-300 leading-relaxed">
-                        TEDxIIMT was born from a simple belief: that powerful ideas have the 
+                        TEDxIIMT UNIVERSITY was born from a simple belief: that powerful ideas have the 
                         ability to transform perspectives, inspire action, and create lasting change. 
                         As an independently organized TED event, we bring together thinkers, 
                         innovators, and dreamers from diverse backgrounds.
@@ -408,7 +408,7 @@ const AboutPage = () => {
                       </p>
                       
                       <p className="text-gray-400 leading-relaxed">
-                        Through TEDxIIMT, we're not just spreading ideas—we're cultivating 
+                        Through TEDxIIMT UNIVERSITY, we're not just spreading ideas—we're cultivating 
                         a culture of lifelong learning, critical thinking, and purposeful action 
                         that extends far beyond a single day.
                       </p>

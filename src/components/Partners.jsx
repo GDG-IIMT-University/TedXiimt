@@ -49,7 +49,7 @@ const Partners = () => {
             Our <span className="text-red-500">Partners</span>
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
-            We're grateful to our amazing partners who make TEDxIIMT possible and help us spread ideas worth spreading.
+            We're grateful to our amazing partners who make TEDxIIMT UNIVERSITY possible and help us spread ideas worth spreading.
           </p>
         </motion.div>
 
@@ -117,7 +117,7 @@ const Partners = () => {
           <div className="bg-gradient-to-r from-red-500/10 to-red-600/10 rounded-2xl p-8 border border-red-500/30 max-w-4xl mx-auto">
             <h3 className="text-3xl font-bold mb-4">Become a Partner</h3>
             <p className="text-gray-300 mb-8 max-w-2xl mx-auto">
-              Join our mission to spread ideas worth spreading. Partner with TEDxIIMT and connect 
+              Join our mission to spread ideas worth spreading. Partner with TEDxIIMT UNIVERSITY and connect 
               with a community of innovators, entrepreneurs, and change-makers.
             </p>
             

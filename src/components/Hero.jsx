@@ -159,7 +159,7 @@ const Hero = () => {
               </span>
             </span>
             <span className="block text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mt-2 md:mt-4 tracking-wide">
-              IIMT University
+              IIMT UNIVERSITY
             </span>
           </motion.h1>
 
@@ -214,7 +214,7 @@ const Hero = () => {
             <a
               href="https://forms.gle/uwZAyzv84SB1WMo37"
               className="group relative w-full sm:w-auto bg-[#EB0028] hover:bg-[#ff1a3d] text-white font-bold px-8 md:px-12 py-4 md:py-5 text-base md:text-lg transition-all duration-300 overflow-hidden"
-              aria-label="Register for TEDxIIMT event"
+              aria-label="Register for TEDxIIMT UNIVERSITY event"
             >
               <span className="relative z-10 flex items-center justify-center gap-2">
                 Get Your Tickets
@@ -228,7 +228,7 @@ const Hero = () => {
             <a
               href="/speakers"
               className="group w-full sm:w-auto bg-transparent border-2 border-white hover:border-[#EB0028] hover:bg-[#EB0028]/10 text-white font-bold px-8 md:px-12 py-4 md:py-5 text-base md:text-lg transition-all duration-300"
-              aria-label="View TEDxIIMT speakers"
+              aria-label="View TEDxIIMT UNIVERSITY speakers"
             >
               <span className="flex items-center justify-center gap-2">
                 Meet Our Speakers

@@ -114,7 +114,7 @@ const Sponsors = () => {
             className="mt-24 text-center md:mt-28 lg:mt-32"
           >
             <p className="mb-8 text-lg text-gray-400 md:mb-10 md:text-xl lg:text-2xl">
-              Interested in sponsoring TEDxIIMT?
+              Interested in sponsoring TEDxIIMT UNIVERSITY?
             </p>
             <motion.button
               whileHover={{ scale: 1.05, y: -2 }}

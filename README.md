@@ -1,6 +1,6 @@
-# 🎤 TEDxIIMT – Official Website
+# 🎤 TEDxIIMT UNIVERSITY UNIVERSITY – Official Website
 
-This is the animated and elegant official website for **TEDxIIMT**, designed to showcase our **Events**, **Speakers**, and **Ideas Worth Spreading**.
+This is the animated and elegant official website for **TEDxIIMT UNIVERSITY**, designed to showcase our **Events**, **Speakers**, and **Ideas Worth Spreading**.
 
 Built with modern tools like **React**, **Vite**, **Tailwind CSS**, and **Framer Motion**, the site features smooth animations, minimal design, and a bold red-black aesthetic inspired by TED.
 
@@ -28,7 +28,7 @@ Built with modern tools like **React**, **Vite**, **Tailwind CSS**, and **Framer
 
 ## 📁 Folder Structure
 
-tedxiimt/
+tedxIIMT UNIVERSITY/
 ├── public/
 │   └── logo-white.png             # Your logo image
 ├── src/
@@ -56,8 +56,8 @@ tedxiimt/
 ### Clone the repo
 
 ```bash
-git clone https://github.com/vyukk/TedXiimt.git
-cd TedXiimt
+git clone https://github.com/vyukk/TedXIIMT UNIVERSITY.git
+cd TedXIIMT UNIVERSITY
 npm install
 npm run dev
 📌 TODO
@@ -73,7 +73,7 @@ Add Onboarding section
 Pull requests are welcome! If you have creative animation ideas or UX enhancements, feel free to contribute.
 
 🔗 Links
-GitHub: https://github.com/vyukk/TedXiimt
+GitHub: https://github.com/vyukk/TedXIIMT UNIVERSITY
 
 📬 Contact
 For collaborations, reach out via LinkedIn or drop a message in the contact section of the site.

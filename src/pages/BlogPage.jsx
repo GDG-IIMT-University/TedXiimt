@@ -36,7 +36,7 @@ const BlogPage = () => {
               transition={{ duration: 0.8 }}
               className="text-4xl md:text-6xl font-bold mb-6"
             >
-              TEDxIIMT University <span className="text-red-500">Stories</span>
+              TEDxIIMT UNIVERSITY <span className="text-red-500">Stories</span>
             </motion.h1>
             <motion.p
               initial={{ opacity: 0, y: 20 }}
@@ -205,7 +205,7 @@ const BlogPage = () => {
               </h3>
               <p className="text-gray-400 mb-8 max-w-2xl mx-auto">
                 Get the latest stories, speaker announcements, and event updates 
-                delivered directly to your inbox. Be part of the TEDxIIMT University community.
+                delivered directly to your inbox. Be part of the TEDxIIMT UNIVERSITY community.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
                 <input

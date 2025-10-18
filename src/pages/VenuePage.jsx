@@ -29,7 +29,7 @@ const VenuePage = () => {
                 </h1>
                 
                 <p className="text-lg sm:text-xl md:text-2xl text-gray-400 max-w-3xl mx-auto leading-relaxed px-4">
-                  Join us at IIMT University for an unforgettable TEDx experience
+                  Join us at IIMT UNIVERSITY for an unforgettable TEDx experience
                 </p>
               </motion.div>
             </div>
@@ -54,7 +54,7 @@ const VenuePage = () => {
                       Location
                     </div>
                     <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">
-                      IIMT University
+                      IIMT UNIVERSITY
                     </h2>
                   </div>
 
@@ -130,14 +130,14 @@ const VenuePage = () => {
                 >
                   <div className="bg-[#0a0a0a] border-2 border-[#1a1a1a] p-4 h-[600px]">
                     <iframe 
-                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3497.2147157729!2d77.76051131508!3d28.99796198249!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390c64e0d67e9d9d%3A0x7f8f8f8f8f8f8f8f!2sIIMT%20University!5e0!3m2!1sen!2sin!4v1234567890123!5m2!1sen!2sin&markers=color:red%7C28.997962,77.762732" 
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3497.2147157729!2d77.76051131508!3d28.99796198249!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390c64e0d67e9d9d%3A0x7f8f8f8f8f8f8f8f!2sIIMT UNIVERSITY%20University!5e0!3m2!1sen!2sin!4v1234567890123!5m2!1sen!2sin&markers=color:red%7C28.997962,77.762732" 
                       width="100%" 
                       height="100%" 
                       style={{ border: 0 }} 
                       allowFullScreen="" 
                       loading="lazy" 
                       referrerPolicy="no-referrer-when-downgrade"
-                      title="IIMT University Location"
+                      title="IIMT UNIVERSITY Location"
                     ></iframe>
                   </div>
                   <div className="mt-6 text-center">
@@ -189,7 +189,7 @@ const VenuePage = () => {
                   },
                   {
                     title: 'By Car',
-                    description: 'Drive directly to IIMT University with ample on-campus parking facilities available.',
+                    description: 'Drive directly to IIMT UNIVERSITY with ample on-campus parking facilities available.',
                     details: ['Free parking on campus', 'GPS coordinates: 28.997962, 77.762732', 'Well-connected by major roads']
                   },
                   {

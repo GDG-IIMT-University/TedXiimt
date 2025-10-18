@@ -26,8 +26,8 @@ const Header = () => {
     //       {
     //         title: 'Event Information',
     //         items: [
-    //           { label: 'About TEDxIIMT', href: '/about', desc: 'Learn about our mission and vision' },
-    //           { label: 'Organizing Team', href: '/team', desc: 'Meet the team behind TEDxIIMT' },
+    //           { label: 'About TEDxIIMT UNIVERSITY', href: '/about', desc: 'Learn about our mission and vision' },
+    //           { label: 'Organizing Team', href: '/team', desc: 'Meet the team behind TEDxIIMT UNIVERSITY' },
     //           { label: 'Schedule', href: '/schedule', desc: 'Full day timeline and agenda' },
     //           { label: 'Venue', href: '/venue', desc: 'Location and directions' },
     //           { label: 'FAQ', href: '/faq',
@@ -147,7 +147,7 @@ const Header = () => {
         transition={{ type: "spring", stiffness: 300, damping: 30 }}
       >
         <a href="/" className="flex items-center">
-          <img src={logo || "/placeholder.svg"} alt="TEDxIIMT Logo" className="h-16" />
+          <img src={logo || "/placeholder.svg"} alt="TEDxIIMT UNIVERSITY Logo" className="h-16" />
         </a>
       </motion.div>
 

@@ -95,7 +95,7 @@ const SpeakerForm = () => {
               Become a <span className="text-red-500">Speaker</span>
             </h1>
             <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-              Share your ideas worth spreading with the TEDxIIMT community
+              Share your ideas worth spreading with the TEDxIIMT UNIVERSITY community
             </p>
           </div>
 
