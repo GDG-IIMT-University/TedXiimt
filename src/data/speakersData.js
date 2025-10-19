@@ -4,7 +4,7 @@ const speakersData = [
     id: 1,
     name: "Miriam Chandy Menacherry",
     designation: "Film Director, Producer, and Storyteller",
-    image: "/src/components/Miriam_Chandy.jpg",
+    image: "https://media.licdn.com/dms/image/v2/D4D03AQGMxsvn0Ai_6w/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1705414202635?e=1762387200&v=beta&t=Vh7qAfntea7MF3fItp_BbC-EeIc9Q59ZyjZs6j37p0k",
     shortBio: "Miriam Chandy Menacherry is an award-winning documentary filmmaker and director known for her compelling storytelling and impactful narratives that explore real human stories with cinematic depth.",
     detailedBio: "Miriam Chandy Menacherry is a celebrated Indian filmmaker and director whose documentaries spotlight untold stories of resilience, courage, and social change. Her work—screened at international film festivals—beautifully bridges journalism and cinema, revealing the extraordinary within the ordinary. Founder of Filament Pictures, she has produced several critically acclaimed documentaries that amplify unheard voices and spark meaningful dialogue through film.",
     quote: "Stories have the power to move hearts and change minds."
