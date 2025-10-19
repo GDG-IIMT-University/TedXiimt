@@ -28,7 +28,7 @@ const NetworkingPage = () => {
                 <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight">
                   Networking at{' '}
                   <span className="text-[#EB0028] inline-block">
-                    TEDxIIMT
+                    TEDxIIMT UNIVERSITY
                   </span>
                 </h1>
                 
@@ -447,7 +447,7 @@ const NetworkingPage = () => {
                       </li>
                       <li className="flex gap-3">
                         <span className="text-[#EB0028] flex-shrink-0">•</span>
-                        <span>Stay updated on future TEDxIIMT events</span>
+                        <span>Stay updated on future TEDxIIMT UNIVERSITY events</span>
                       </li>
                     </ul>
                     

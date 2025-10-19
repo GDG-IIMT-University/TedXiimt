@@ -155,10 +155,10 @@ const AccessibilityPage = () => {
                 <div className="h-1 w-20 bg-[#EB0028]"></div>
               </div>
               <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold mb-6">
-                <span className="text-[#EB0028]">Accessibility</span> at TEDxIIMT
+                <span className="text-[#EB0028]">Accessibility</span> at TEDxIIMT UNIVERSITY
               </h1>
               <p className="text-xl sm:text-2xl text-gray-300 max-w-4xl mx-auto leading-relaxed">
-                We believe ideas worth spreading should be accessible to everyone. Our commitment to inclusion ensures all attendees can fully participate in the TEDxIIMT experience.
+                We believe ideas worth spreading should be accessible to everyone. Our commitment to inclusion ensures all attendees can fully participate in the TEDxIIMT UNIVERSITY experience.
               </p>
             </motion.div>
 
@@ -172,7 +172,7 @@ const AccessibilityPage = () => {
               <div className="h-1 w-16 bg-[#EB0028] mx-auto mb-6"></div>
               <h2 className="text-2xl font-bold mb-4 text-center text-[#EB0028]">Our Accessibility Commitment</h2>
               <p className="text-gray-200 text-center leading-relaxed">
-                TEDxIIMT is committed to providing an inclusive experience for all attendees. We work continuously to identify and remove barriers, ensuring everyone can access, enjoy, and benefit from our event. If you have specific accessibility needs, please reach out to us at least two weeks before the event.
+                TEDxIIMT UNIVERSITY is committed to providing an inclusive experience for all attendees. We work continuously to identify and remove barriers, ensuring everyone can access, enjoy, and benefit from our event. If you have specific accessibility needs, please reach out to us at least two weeks before the event.
               </p>
             </motion.div>
           </div>
@@ -333,7 +333,7 @@ const AccessibilityPage = () => {
               </div>
               <h2 className="text-4xl font-bold mb-6">Request Accommodations</h2>
               <p className="text-xl text-gray-300 mb-8">
-                Need specific accommodations? We're here to help make your TEDxIIMT experience exceptional.
+                Need specific accommodations? We're here to help make your TEDxIIMT UNIVERSITY experience exceptional.
               </p>
               
               <div className="bg-[#0a0a0a] border-2 border-[#1a1a1a] p-8 mb-8">
@@ -366,7 +366,7 @@ const AccessibilityPage = () => {
               
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <motion.a
-                  href="mailto:accessibility@tedxiimt.com"
+                  href="mailto:accessibility@tedxIIMT UNIVERSITY.com"
                   className="bg-[#EB0028] hover:bg-[#ff1a3d] text-white px-8 py-4 text-lg font-semibold transition-all duration-300 inline-flex items-center justify-center"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.98 }}

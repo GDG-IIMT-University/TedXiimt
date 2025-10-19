@@ -48,7 +48,7 @@ const NewsletterSignup = () => {
             </h2>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
               Join our newsletter and be the first to know about upcoming events, speaker announcements, 
-              and exclusive content from the TEDxIIMT community.
+              and exclusive content from the TEDxIIMT UNIVERSITY community.
             </p>
           </motion.div>
 
@@ -175,7 +175,7 @@ const NewsletterSignup = () => {
                     <h3 className="text-2xl font-bold mb-2 text-green-400">Welcome to the Community!</h3>
                     <p className="text-gray-300">
                       Thank you for subscribing! Check your email for a confirmation message and 
-                      get ready for exciting updates from TEDxIIMT.
+                      get ready for exciting updates from TEDxIIMT UNIVERSITY.
                     </p>
                   </motion.div>
                 )}

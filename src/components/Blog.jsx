@@ -30,7 +30,7 @@ const Blog = () => {
           </h2>
           <p className="text-gray-400 max-w-2xl mx-auto">
             Stay updated with speaker announcements, inspiring TED Talks, behind-the-scenes content, 
-            and the latest news from our TEDxIIMT community.
+            and the latest news from our TEDxIIMT UNIVERSITY community.
           </p>
         </motion.div>
 

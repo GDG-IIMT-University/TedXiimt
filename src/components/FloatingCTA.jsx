@@ -213,7 +213,7 @@ const FloatingCTA = () => {
                   {/* Header */}
                   <div className="text-center mb-4">
                     <h3 className="text-white font-bold text-lg mb-1">
-                      TEDxIIMT 2024
+                      TEDxIIMT UNIVERSITY 2024
                     </h3>
                     <p className="text-gray-400 text-sm">
                       Transform Your Perspective

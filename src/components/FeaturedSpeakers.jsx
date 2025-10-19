@@ -1,45 +1,30 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import speakersData from '../data/speakersData';
 
 const FeaturedSpeakers = () => {
   const [currentSpeaker, setCurrentSpeaker] = useState(0);
   const [isAutoPlay, setIsAutoPlay] = useState(true);
 
-  const speakers = [
-    {
-      id: 1,
-      name: 'Miriam Chandy Menacherry',
-      title: 'Screenwriter & Filmmaker',
-      company: 'Indian Film Industry',
-      image: '/src/components/Miriam_Chandy.jpg',
-      talk: 'The Art of Storytelling',
-      description: 'Award-winning screenwriter known for crafting compelling narratives that resonate across cultures and generations.',
-      credentials: ['Screenwriter', 'Filmmaker', 'Creative Director'],
-      expertise: ['Storytelling', 'Film Production', 'Creative Writing']
-    },
-    {
-      id: 2,
-      name: 'Mystery Speaker',
-      title: 'To Be Revealed',
-      company: 'Special Guest',
-      image: '/src/components/mystery-logo.png',
-      talk: 'A Surprise Worth Waiting For',
-      description: 'An extraordinary individual whose identity will be unveiled at the event. Get ready for an unforgettable experience.',
-      credentials: ['Industry Leader', 'Visionary', 'Change Maker'],
-      expertise: ['Innovation', 'Leadership', 'Impact']
-    },
-    {
-      id: 3,
-      name: 'Nupur Goel',
-      title: 'IAS Officer',
-      company: 'Government of India',
-      image: '/api/placeholder/400/400',
-      talk: 'Governance in the Digital Age',
-      description: 'Distinguished civil servant bringing innovation and transparency to public administration in India.',
-      credentials: ['IAS Officer', 'Public Policy Expert', 'Social Reformer'],
-      expertise: ['Public Administration', 'Digital Governance', 'Policy Reform']
-    }
-  ];
+  // Transform ALL speakersData to match the component's expected format
+  const speakers = speakersData.map(speaker => ({
+    id: speaker.id,
+    name: speaker.name,
+    title: speaker.designation,
+    company: speaker.designation.includes('IIMT') ? 'IIMT UNIVERSITY' : 
+            speaker.designation.includes('IAS') ? 'Government of India' :
+            speaker.designation.includes('Olympian') ? 'Sports Authority of India' :
+            speaker.designation.includes('Founder') ? 'Tricky Man' :
+            speaker.designation.includes('World Record') ? 'Independent Artist' :
+            speaker.designation.includes('Comedian') ? 'Entertainment Industry' :
+            speaker.designation.includes('Actor') ? 'Film & Politics' :
+            'Featured Speaker',
+    image: speaker.image,
+    talk: speaker.quote,
+    description: speaker.shortBio,
+    credentials: [speaker.designation.split(',')[0], speaker.designation.split(',')[1] || 'Keynote Speaker', 'TEDxIIMT Speaker'],
+    expertise: speaker.designation.split('&').map(exp => exp.trim()).slice(0, 3)
+  }));
 
   useEffect(() => {
     let interval;

@@ -9,7 +9,7 @@ const Testimonials = () => {
   const testimonials = [
     {
       id: 1,
-      quote: "TEDxIIMT transformed how I think about innovation. The speakers weren't just presenting ideas - they were sharing life-changing perspectives that I still apply in my startup today.",
+      quote: "TEDxIIMT UNIVERSITY transformed how I think about innovation. The speakers weren't just presenting ideas - they were sharing life-changing perspectives that I still apply in my startup today.",
       name: "Priya Sharma",
       title: "Founder & CEO",
       company: "TechFlow Solutions",
@@ -22,7 +22,7 @@ const Testimonials = () => {
     },
     {
       id: 2,
-      quote: "The networking at TEDxIIMT was unparalleled. I met my current business partner during the event, and we've since launched a successful sustainable energy company together.",
+      quote: "The networking at TEDxIIMT UNIVERSITY was unparalleled. I met my current business partner during the event, and we've since launched a successful sustainable energy company together.",
       name: "Dr. Rajesh Kumar",
       title: "Research Director",
       company: "Green Energy Institute",
@@ -35,14 +35,14 @@ const Testimonials = () => {
     },
     {
       id: 3,
-      quote: "As a student, TEDxIIMT opened my eyes to possibilities I never knew existed. The interactive sessions and mentorship opportunities were invaluable for my career growth.",
+      quote: "As a student, TEDxIIMT UNIVERSITY opened my eyes to possibilities I never knew existed. The interactive sessions and mentorship opportunities were invaluable for my career growth.",
       name: "Anisha Patel",
       title: "Software Engineer",
       company: "Microsoft India",
       image: "/api/placeholder/80/80",
       category: "student",
       year: "2022",
-      credentials: "IIMT Alumna, Microsoft Certified",
+      credentials: "IIMT UNIVERSITY Alumna, Microsoft Certified",
       rating: 5,
       verified: true
     },
@@ -61,7 +61,7 @@ const Testimonials = () => {
     },
     {
       id: 5,
-      quote: "TEDxIIMT's focus on diversity and inclusion created an environment where every voice was heard and valued. The conversations continued long after the event ended.",
+      quote: "TEDxIIMT UNIVERSITY's focus on diversity and inclusion created an environment where every voice was heard and valued. The conversations continued long after the event ended.",
       name: "Sarah Johnson",
       title: "Diversity & Inclusion Lead",
       company: "Global Corp",
@@ -209,7 +209,7 @@ const Testimonials = () => {
             What <span className="text-[#EB0028]">Attendees</span> Say
           </h2>
           <p className="text-xl sm:text-2xl text-gray-300 max-w-4xl mx-auto leading-relaxed">
-            Real experiences from past TEDxIIMT participants
+            Real experiences from past TEDxIIMT UNIVERSITY participants
           </p>
         </motion.div>
 

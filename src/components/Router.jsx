@@ -20,108 +20,108 @@ const Router = () => {
   const routes = {
     '/': {
       component: React.lazy(() => import('../App')),
-      title: 'Home - TEDxIIMT 2024',
-      description: 'Transform Your Perspective at TEDxIIMT 2024'
+      title: 'Home - TEDxIIMT UNIVERSITY 2024',
+      description: 'Transform Your Perspective at TEDxIIMT UNIVERSITY 2024'
     },
     '/blog': {
       component: React.lazy(() => import('../pages/BlogPage')),
-      title: 'Stories - TEDxIIMT',
-      description: 'Read inspiring stories and updates from TEDxIIMT'
+      title: 'Stories - TEDxIIMT UNIVERSITY',
+      description: 'Read inspiring stories and updates from TEDxIIMT UNIVERSITY'
     },
     '/mystery': {
       component: React.lazy(() => import('../pages/MysteryPage')),
-      title: 'Mystery Speaker - TEDxIIMT',
+      title: 'Mystery Speaker - TEDxIIMT UNIVERSITY',
       description: 'Discover our surprise speaker'
     },
     '/sponsors': {
       component: React.lazy(() => import('../pages/SponsorsPage')),
-      title: 'Sponsors - TEDxIIMT',
+      title: 'Sponsors - TEDxIIMT UNIVERSITY',
       description: 'Meet our amazing sponsors and partners'
     },
     '/speakers': {
       component: React.lazy(() => import('../pages/SpeakersPage')),
-      title: 'Speakers - TEDxIIMT',
+      title: 'Speakers - TEDxIIMT UNIVERSITY',
       description: 'Meet our inspiring speakers'
     },
     '/join-us/speaker': {
       component: React.lazy(() => import('../pages/SpeakerForm')),
-      title: 'Become a Speaker - TEDxIIMT',
-      description: 'Apply to speak at TEDxIIMT 2024'
+      title: 'Become a Speaker - TEDxIIMT UNIVERSITY',
+      description: 'Apply to speak at TEDxIIMT UNIVERSITY 2024'
     },
     '/join-us/sponsor': {
       component: React.lazy(() => import('../pages/SponsorForm')),
-      title: 'Sponsor Us - TEDxIIMT',
-      description: 'Partner with TEDxIIMT 2024'
+      title: 'Sponsor Us - TEDxIIMT UNIVERSITY',
+      description: 'Partner with TEDxIIMT UNIVERSITY 2024'
     },
     '/join-us/attendee': {
       component: React.lazy(() => import('../pages/AttendeeForm')),
-      title: 'Get Tickets - TEDxIIMT',
-      description: 'Register for TEDxIIMT 2024'
+      title: 'Get Tickets - TEDxIIMT UNIVERSITY',
+      description: 'Register for TEDxIIMT UNIVERSITY 2024'
     },
     '/about': {
       component: React.lazy(() => import('../pages/AboutPage')),
-      title: 'About - TEDxIIMT',
-      description: 'Learn about TEDxIIMT and our mission'
+      title: 'About - TEDxIIMT UNIVERSITY',
+      description: 'Learn about TEDxIIMT UNIVERSITY and our mission'
     },
     '/schedule': {
       component: React.lazy(() => import('../pages/SchedulePage')),
-      title: 'Schedule - TEDxIIMT',
+      title: 'Schedule - TEDxIIMT UNIVERSITY',
       description: 'Full event schedule and timeline'
     },
     '/venue': {
       component: React.lazy(() => import('../pages/VenuePage')),
-      title: 'Venue - TEDxIIMT',
+      title: 'Venue - TEDxIIMT UNIVERSITY',
       description: 'Event location and directions'
     },
     '/faq': {
       component: React.lazy(() => import('../pages/FAQPage')),
-      title: 'FAQ - TEDxIIMT',
+      title: 'FAQ - TEDxIIMT UNIVERSITY',
       description: 'Frequently asked questions'
     },
     '/media-partners': {
       component: React.lazy(() => import('../pages/MediaPartnersPage')),
-      title: 'Media Partners - TEDxIIMT',
+      title: 'Media Partners - TEDxIIMT UNIVERSITY',
       description: 'Our media and press partners'
     },
     '/community-partners': {
       component: React.lazy(() => import('../pages/CommunityPartnersPage')),
-      title: 'Community Partners - TEDxIIMT',
+      title: 'Community Partners - TEDxIIMT UNIVERSITY',
       description: 'Our community and organizational partners'
     },
     '/accessibility': {
       component: React.lazy(() => import('../pages/AccessibilityPage')),
-      title: 'Accessibility - TEDxIIMT',
+      title: 'Accessibility - TEDxIIMT UNIVERSITY',
       description: 'Accessibility features and accommodations'
     },
     '/live': {
       component: React.lazy(() => import('../pages/LiveStreamPage')),
-      title: 'Live Stream - TEDxIIMT',
-      description: 'Watch TEDxIIMT talks live online'
+      title: 'Live Stream - TEDxIIMT UNIVERSITY',
+      description: 'Watch TEDxIIMT UNIVERSITY talks live online'
     },
     '/what-to-expect': {
       component: React.lazy(() => import('../pages/WhatToExpectPage')),
-      title: 'What to Expect - TEDxIIMT',
-      description: 'Complete guide to the TEDxIIMT event experience'
+      title: 'What to Expect - TEDxIIMT UNIVERSITY',
+      description: 'Complete guide to the TEDxIIMT UNIVERSITY event experience'
     },
     '/networking': {
       component: React.lazy(() => import('../pages/NetworkingPage')),
-      title: 'Networking - TEDxIIMT',
-      description: 'Connect with innovators and changemakers at TEDxIIMT'
+      title: 'Networking - TEDxIIMT UNIVERSITY',
+      description: 'Connect with innovators and changemakers at TEDxIIMT UNIVERSITY'
     },
     '/team': {
       component: React.lazy(() => import('../pages/TeamPage')),
-      title: 'Organizing Team - TEDxIIMT',
-      description: 'Meet the passionate team behind TEDxIIMT'
+      title: 'Organizing Team - TEDxIIMT UNIVERSITY',
+      description: 'Meet the passionate team behind TEDxIIMT UNIVERSITY'
     },
     '/gallery': {
       component: React.lazy(() => import('../pages/GalleryPage')),
-      title: 'Gallery - TEDxIIMT',
-      description: 'Explore photos, videos, and moments from TEDxIIMT events'
+      title: 'Gallery - TEDxIIMT UNIVERSITY',
+      description: 'Explore photos, videos, and moments from TEDxIIMT UNIVERSITY events'
     },
 
     '/test': {
       component: React.lazy(() => import('../pages/TESTpage')),
-      title: 'Test Page - TEDxIIMT',
+      title: 'Test Page - TEDxIIMT UNIVERSITY',
       description: 'This is a test page for development purposes'
     }
   };
@@ -137,7 +137,7 @@ const Router = () => {
     if (currentPath.startsWith('/blog/')) {
       return {
         component: React.lazy(() => import('../pages/BlogPost')),
-        title: 'Blog Post - TEDxIIMT',
+        title: 'Blog Post - TEDxIIMT UNIVERSITY',
         description: 'Read our latest blog post'
       };
     }

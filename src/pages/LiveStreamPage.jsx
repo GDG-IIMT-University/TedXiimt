@@ -11,7 +11,7 @@ const LiveStreamPage = () => {
     { id: 2, user: "StudentExplorer", message: "This is exactly what I needed to hear today", time: "14:24" },
     { id: 3, user: "InnovationSeeker", message: "The speaker's perspective is revolutionary", time: "14:25" },
     { id: 4, user: "FutureBuilder", message: "How can we implement these ideas in education?", time: "14:26" },
-    { id: 5, user: "ChangeAgent", message: "TEDxIIMT always delivers incredible content", time: "14:27" }
+    { id: 5, user: "ChangeAgent", message: "TEDxIIMT UNIVERSITY always delivers incredible content", time: "14:27" }
   ]);
   const [newMessage, setNewMessage] = useState('');
   const [userName, setUserName] = useState('');
@@ -59,7 +59,7 @@ const LiveStreamPage = () => {
     {
       time: "09:00 AM",
       title: "Opening Ceremony",
-      speaker: "TEDxIIMT Team",
+      speaker: "TEDxIIMT UNIVERSITY Team",
       status: "completed"
     },
     {
@@ -116,7 +116,7 @@ const LiveStreamPage = () => {
           <div className="container mx-auto px-4 sm:px-6 flex items-center justify-center space-x-4">
             <div className={`w-3 h-3 rounded-full ${isLive ? 'bg-white animate-pulse' : 'bg-gray-400'}`}></div>
             <span className="font-semibold">
-              {isLive ? 'LIVE NOW' : 'STREAM STARTING SOON'} - TEDxIIMT 2024
+              {isLive ? 'LIVE NOW' : 'STREAM STARTING SOON'} - TEDxIIMT UNIVERSITY 2024
             </span>
             <span className="text-sm opacity-75">
               👥 {viewerCount.toLocaleString()} viewers
@@ -146,7 +146,7 @@ const LiveStreamPage = () => {
                         <path d="M8 5v14l11-7z"/>
                       </svg>
                     </div>
-                    <h3 className="text-2xl font-bold mb-2">TEDxIIMT 2024 Live Stream</h3>
+                    <h3 className="text-2xl font-bold mb-2">TEDxIIMT UNIVERSITY 2024 Live Stream</h3>
                     <p className="text-gray-400">
                       {isLive ? 'Stream is live - join thousands of viewers worldwide' : 'Stream will begin shortly'}
                     </p>
@@ -394,10 +394,10 @@ const LiveStreamPage = () => {
                 
                 <div className="space-y-3">
                   {[
-                    { platform: 'Twitter', handle: '@TEDxIIMT', color: 'text-blue-400' },
-                    { platform: 'LinkedIn', handle: 'TEDxIIMT', color: 'text-blue-600' },
-                    { platform: 'Instagram', handle: '@tedxiimt', color: 'text-pink-400' },
-                    { platform: 'YouTube', handle: 'TEDxIIMT', color: 'text-red-500' }
+                    { platform: 'Twitter', handle: '@TEDxIIMT UNIVERSITY', color: 'text-blue-400' },
+                    { platform: 'LinkedIn', handle: 'TEDxIIMT UNIVERSITY', color: 'text-blue-600' },
+                    { platform: 'Instagram', handle: '@tedxIIMT UNIVERSITY', color: 'text-pink-400' },
+                    { platform: 'YouTube', handle: 'TEDxIIMT UNIVERSITY', color: 'text-red-500' }
                   ].map(social => (
                     <a
                       key={social.platform}
@@ -413,7 +413,7 @@ const LiveStreamPage = () => {
                 <div className="mt-4 pt-4 border-t border-gray-700/50">
                   <p className="text-sm text-gray-400 mb-2">Use hashtag:</p>
                   <span className="bg-red-600/20 text-red-400 px-3 py-1 rounded-full text-sm font-mono">
-                    #TEDxIIMT2024
+                    #TEDxIIMT UNIVERSITY2024
                   </span>
                 </div>
               </motion.div>

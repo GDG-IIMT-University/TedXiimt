@@ -11,12 +11,12 @@ const FAQPage = () => {
       category: "General Information",
       questions: [
         {
-          question: "What is TEDxIIMT?",
-          answer: "TEDxIIMT is an independently organized TED event licensed by TED. It brings together forward-thinking individuals to share ideas worth spreading in the spirit of TED's mission of 'ideas worth spreading.'"
+          question: "What is TEDxIIMT UNIVERSITY?",
+          answer: "TEDxIIMT UNIVERSITY is an independently organized TED event licensed by TED. It brings together forward-thinking individuals to share ideas worth spreading in the spirit of TED's mission of 'ideas worth spreading.'"
         },
         {
           question: "When and where is the event?",
-          answer: "TEDxIIMT 2024 will be held at the IIMT Main Auditorium, Sector 58, Noida. The event runs from 8:00 AM to 4:00 PM. Check our schedule page for detailed timings."
+          answer: "TEDxIIMT UNIVERSITY 2024 will be held at the IIMT UNIVERSITY Main Auditorium, Sector 58, Noida. The event runs from 8:00 AM to 4:00 PM. Check our schedule page for detailed timings."
         },
         {
           question: "How much do tickets cost?",
@@ -24,7 +24,7 @@ const FAQPage = () => {
         },
         {
           question: "Is there an age limit?",
-          answer: "TEDxIIMT is open to all ages. However, we recommend the event for ages 16+ due to the nature and depth of the talks. Minors must be accompanied by an adult."
+          answer: "TEDxIIMT UNIVERSITY is open to all ages. However, we recommend the event for ages 16+ due to the nature and depth of the talks. Minors must be accompanied by an adult."
         }
       ]
     },
@@ -62,7 +62,7 @@ const FAQPage = () => {
         },
         {
           question: "Is there parking available?",
-          answer: "Free parking is available at the IIMT campus. However, we encourage using public transport. The nearest metro station is Sector 59, just a 5-minute walk away."
+          answer: "Free parking is available at the IIMT UNIVERSITY campus. However, we encourage using public transport. The nearest metro station is Sector 59, just a 5-minute walk away."
         },
         {
           question: "Can I leave and re-enter?",
@@ -75,7 +75,7 @@ const FAQPage = () => {
       questions: [
         {
           question: "Is the venue wheelchair accessible?",
-          answer: "Yes, the IIMT auditorium is fully wheelchair accessible with ramps, accessible restrooms, and reserved seating areas. Please mention any accessibility needs during registration."
+          answer: "Yes, the IIMT UNIVERSITY auditorium is fully wheelchair accessible with ramps, accessible restrooms, and reserved seating areas. Please mention any accessibility needs during registration."
         },
         {
           question: "Are sign language interpreters available?",
@@ -87,7 +87,7 @@ const FAQPage = () => {
         },
         {
           question: "Is there medical assistance available?",
-          answer: "Yes, we have medical personnel on-site throughout the event. The IIMT medical center is also within 5 minutes of the venue."
+          answer: "Yes, we have medical personnel on-site throughout the event. The IIMT UNIVERSITY medical center is also within 5 minutes of the venue."
         }
       ]
     },
@@ -108,7 +108,7 @@ const FAQPage = () => {
         },
         {
           question: "Can I suggest a speaker?",
-          answer: "We welcome speaker suggestions! Please email us with the speaker's details and why they'd be a good fit for TEDxIIMT. Suggestions for next year are always welcome."
+          answer: "We welcome speaker suggestions! Please email us with the speaker's details and why they'd be a good fit for TEDxIIMT UNIVERSITY. Suggestions for next year are always welcome."
         }
       ]
     }
@@ -137,7 +137,7 @@ const FAQPage = () => {
                 Frequently Asked <span className="text-red-500">Questions</span>
               </h1>
               <p className="text-xl sm:text-2xl text-gray-300 max-w-4xl mx-auto leading-relaxed">
-                Got questions? We've got answers! Find everything you need to know about TEDxIIMT 2024
+                Got questions? We've got answers! Find everything you need to know about TEDxIIMT UNIVERSITY 2024
               </p>
             </motion.div>
           </div>
@@ -237,7 +237,7 @@ const FAQPage = () => {
               
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <motion.a
-                  href="mailto:info@tedxiimt.com"
+                  href="mailto:info@tedxIIMT UNIVERSITY.com"
                   className="bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 text-white px-8 py-4 rounded-full text-lg font-semibold shadow-xl hover:shadow-2xl transition-all duration-300 inline-flex items-center justify-center space-x-2"
                   whileHover={{ scale: 1.05, y: -2 }}
                   whileTap={{ scale: 0.98 }}

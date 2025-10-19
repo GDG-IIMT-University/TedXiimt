@@ -9,7 +9,7 @@ const Footer = () => {
         <div>
           <h3 className="text-xl font-semibold text-red-500 mb-4">About Us</h3>
           <p className="text-gray-400 text-sm">
-            TEDxIIMT is an independently organized TED event hosted at IIMT University, bringing together thinkers, creators, and changemakers to share ideas worth spreading.
+            TEDxIIMT UNIVERSITY is an independently organized TED event hosted at IIMT UNIVERSITY, bringing together thinkers, creators, and changemakers to share ideas worth spreading.
           </p>
         </div>
 
@@ -45,7 +45,7 @@ const Footer = () => {
           This independent TEDx event is operated under license from TED.
         </p>
         <p className="text-gray-500 text-xs">
-          © {new Date().getFullYear()} TEDxIIMT. All rights reserved.
+          © {new Date().getFullYear()} TEDxIIMT UNIVERSITY. All rights reserved.
         </p>
       </div>
     </footer>

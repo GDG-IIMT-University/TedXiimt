@@ -160,7 +160,7 @@ const MediaPartnersPage = () => {
             >
               <h2 className="text-4xl font-bold mb-6">Our Trusted Partners</h2>
               <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-                Working together to bring TEDxIIMT's inspiring stories to audiences across India and beyond
+                Working together to bring TEDxIIMT UNIVERSITY's inspiring stories to audiences across India and beyond
               </p>
             </motion.div>
 
@@ -269,7 +269,7 @@ const MediaPartnersPage = () => {
                 </div>
                 <h3 className="text-2xl font-bold mb-4">Wide Reach</h3>
                 <p className="text-gray-300">
-                  Our media partners help us reach millions of viewers across India, amplifying the impact of every talk and idea shared at TEDxIIMT.
+                  Our media partners help us reach millions of viewers across India, amplifying the impact of every talk and idea shared at TEDxIIMT UNIVERSITY.
                 </p>
               </motion.div>
 
@@ -322,12 +322,12 @@ const MediaPartnersPage = () => {
               </div>
               <h2 className="text-4xl font-bold mb-6">Join Our Media Network</h2>
               <p className="text-xl text-gray-300 mb-8 max-w-3xl mx-auto">
-                Interested in partnering with TEDxIIMT? We're always looking for media partners who share our passion for spreading ideas worth spreading.
+                Interested in partnering with TEDxIIMT UNIVERSITY? We're always looking for media partners who share our passion for spreading ideas worth spreading.
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <motion.a
-                  href="mailto:media@tedxiimt.com"
+                  href="mailto:media@tedxIIMT UNIVERSITY.com"
                   className="bg-[#EB0028] hover:bg-[#ff1a3d] text-white px-8 py-4 text-lg font-semibold transition-all duration-300 inline-flex items-center justify-center"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.98 }}

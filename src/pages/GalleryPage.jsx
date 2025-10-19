@@ -21,10 +21,10 @@ const GalleryPage = () => {
     {
       id: 'yt1',
       type: 'videos',
-      title: 'TEDxIIMT 2023 Highlights',
+      title: 'TEDxIIMT UNIVERSITY 2023 Highlights',
       videoId: 'dQw4w9WgXcQ',
       thumbnail: 'https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg',
-      description: 'Relive the best moments from TEDxIIMT 2023',
+      description: 'Relive the best moments from TEDxIIMT UNIVERSITY 2023',
       date: 'March 2023'
     },
     {
@@ -39,10 +39,10 @@ const GalleryPage = () => {
     {
       id: 'yt3',
       type: 'videos',
-      title: 'Behind the Scenes - TEDxIIMT',
+      title: 'Behind the Scenes - TEDxIIMT UNIVERSITY',
       videoId: 'dQw4w9WgXcQ',
       thumbnail: 'https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg',
-      description: 'A glimpse into the making of TEDxIIMT',
+      description: 'A glimpse into the making of TEDxIIMT UNIVERSITY',
       date: 'April 2023'
     },
     {
@@ -64,7 +64,7 @@ const GalleryPage = () => {
       title: 'Opening Ceremony',
       thumbnail: '/api/placeholder/800/450',
       videoUrl: '#',
-      description: 'TEDxIIMT 2023 Opening Ceremony',
+      description: 'TEDxIIMT UNIVERSITY 2023 Opening Ceremony',
       duration: '2:30',
       category: 'highlights'
     },
@@ -123,7 +123,7 @@ const GalleryPage = () => {
       type: 'photos',
       title: 'Full Auditorium',
       image: '/api/placeholder/1200/800',
-      description: 'Packed house at IIMT University',
+      description: 'Packed house at IIMT UNIVERSITY',
       category: 'photos'
     },
     {
@@ -131,7 +131,7 @@ const GalleryPage = () => {
       type: 'photos',
       title: 'Team Photo',
       image: '/api/placeholder/1200/800',
-      description: 'The organizing team behind TEDxIIMT',
+      description: 'The organizing team behind TEDxIIMT UNIVERSITY',
       category: 'photos'
     },
     {
@@ -163,7 +163,7 @@ const GalleryPage = () => {
       type: 'photos',
       title: 'Closing Ceremony',
       image: '/api/placeholder/1200/800',
-      description: 'Final moments of TEDxIIMT 2023',
+      description: 'Final moments of TEDxIIMT UNIVERSITY 2023',
       category: 'highlights'
     }
   ];
@@ -218,7 +218,7 @@ const GalleryPage = () => {
               </h1>
               
               <p className="text-lg sm:text-xl md:text-2xl text-gray-400 leading-relaxed">
-                Explore photos, videos, and moments from TEDxIIMT events
+                Explore photos, videos, and moments from TEDxIIMT UNIVERSITY events
               </p>
             </motion.div>
           </div>
@@ -442,7 +442,7 @@ const GalleryPage = () => {
                 <div className="h-1 w-20 bg-[#EB0028] mx-auto mb-8"></div>
                 
                 <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">
-                  Be Part of <span className="text-[#EB0028]">TEDxIIMT 2024</span>
+                  Be Part of <span className="text-[#EB0028]">TEDxIIMT UNIVERSITY 2024</span>
                 </h2>
                 
                 <p className="text-lg md:text-xl text-gray-300 mb-8 leading-relaxed">

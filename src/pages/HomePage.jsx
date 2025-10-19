@@ -21,6 +21,9 @@ const HomePage = () => {
       <main>
         {/* 1. Hero Section - First Impression & Value Prop */}
         <Hero />
+
+        {/* 4. Featured Speakers - Social Proof & Authority */}
+        <FeaturedSpeakers />
         
         {/* 2. Countdown Timer - Creates Urgency (Von Restorff Effect) */}
         <CountdownTimer />
@@ -30,10 +33,6 @@ const HomePage = () => {
 
         {/* 3. Value Proposition - Why Attend (Miller's Rule - 4 key benefits) */}
         <ValueProposition />
-
-        {/* 4. Featured Speakers - Social Proof & Authority */}
-        <FeaturedSpeakers />
-
         
         {/* 5. Event Highlights - Features & Benefits (Progressive Disclosure) */}
         {/* <EventHighlights /> */}

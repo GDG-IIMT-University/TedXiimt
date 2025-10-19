@@ -35,12 +35,12 @@ const WhatIsTEDx = () => {
             <div className="space-y-6">
               <p className="text-lg md:text-xl text-gray-300 leading-relaxed">
                 TEDx is a program of local, self-organized events that bring people together to share 
-                a TED-like experience. Our event is called <span className="text-[#EB0028] font-semibold">TEDxIIMT University</span>, 
+                a TED-like experience. Our event is called <span className="text-[#EB0028] font-semibold">TEDxIIMT UNIVERSITY</span>, 
                 where <span className="text-[#EB0028]">x</span> = independently organized TED event.
               </p>
               
               <p className="text-base md:text-lg text-gray-400 leading-relaxed">
-                At our TEDxIIMT University event, TED Talks video and live speakers will combine to spark deep 
+                At our TEDxIIMT UNIVERSITY event, TED Talks video and live speakers will combine to spark deep 
                 discussion and connection in a small group. The TED Conference provides general guidance 
                 for the TEDx program, but individual TEDx events, including ours, are self-organized.
               </p>

@@ -70,7 +70,7 @@ const AttendeeForm = () => {
     },
     {
       name: 'motivation',
-      label: 'Why do you want to attend TEDxIIMT?',
+      label: 'Why do you want to attend TEDxIIMT UNIVERSITY?',
       type: 'textarea',
       required: true,
       placeholder: 'Tell us what motivates you to attend and what you hope to gain from the experience'
@@ -91,7 +91,7 @@ const AttendeeForm = () => {
     },
     {
       name: 'hearAboutUs',
-      label: 'How did you hear about TEDxIIMT?',
+      label: 'How did you hear about TEDxIIMT UNIVERSITY?',
       type: 'select',
       required: true,
       options: ['Social Media', 'Website', 'Friend/Colleague', 'University', 'Previous Event', 'Other']
@@ -113,7 +113,7 @@ const AttendeeForm = () => {
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
             <h1 className="text-4xl md:text-5xl font-bold mb-4">
-              Join <span className="text-red-500">TEDxIIMT</span>
+              Join <span className="text-red-500">TEDxIIMT UNIVERSITY</span>
             </h1>
             <p className="text-xl text-gray-300 max-w-2xl mx-auto">
               Be part of an inspiring community of thinkers and changemakers
@@ -123,7 +123,7 @@ const AttendeeForm = () => {
           <FormComponent
             formType="Attendee"
             title="Attendee Registration"
-            description="Register to attend TEDxIIMT and be part of an unforgettable experience filled with inspiring talks, networking opportunities, and ideas worth spreading."
+            description="Register to attend TEDxIIMT UNIVERSITY and be part of an unforgettable experience filled with inspiring talks, networking opportunities, and ideas worth spreading."
             fields={attendeeFields}
           />
         </div>

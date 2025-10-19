@@ -268,13 +268,13 @@ public/Red Black Modern Technology Presentation (1).png  (334 KB) ✅
 
 ### **1. Check File Exists**
 ```powershell
-Test-Path "c:\Users\kaifm\Desktop\TedXiimt\public\your-image.png"
+Test-Path "c:\Users\kaifm\Desktop\TedXIIMT UNIVERSITY\public\your-image.png"
 # Should return: True
 ```
 
 ### **2. Check File Size**
 ```powershell
-(Get-Item "c:\Users\kaifm\Desktop\TedXiimt\public\your-image.png").Length
+(Get-Item "c:\Users\kaifm\Desktop\TedXIIMT UNIVERSITY\public\your-image.png").Length
 # Should be > 0 (not empty!)
 ```
 
