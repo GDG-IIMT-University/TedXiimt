@@ -6,19 +6,19 @@ const ValueProposition = () => {
     {
       title: 'Expand Your Mind',
       description: 'Discover groundbreaking ideas from visionary speakers across diverse fields of innovation',
-      stats: '12+ Talks',
+      stats: 'TEDx Talks',
       features: ['Technology', 'Science', 'Social Impact']
     },
     {
       title: 'Build Connections',
       description: 'Network with like-minded innovators, entrepreneurs, and thought leaders in your field',
-      stats: '500+ Attendees',
+      stats: 'Diverse Attendees',
       features: ['Networking', 'Partnerships', 'Mentorship']
     },
     {
       title: 'Fuel Innovation',
       description: 'Get inspired to turn your ideas into reality and make a positive impact in the world',
-      stats: '6 Hours',
+      stats: '5 Hours',
       features: ['Workshops', 'Interactive Sessions', 'Action Plans']
     },
     {

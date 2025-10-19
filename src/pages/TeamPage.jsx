@@ -229,13 +229,13 @@ const TeamPage = () => {
                 
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <a
-                    href="mailto:team@tedxIIMT UNIVERSITY.com"
+                    href="mailto:info@tedxiimtuniversity.com"
                     className="inline-block bg-[#EB0028] hover:bg-[#ff1a3d] text-white font-bold px-8 py-4 text-lg transition-all duration-300"
                   >
                     Get Involved
                   </a>
                   <a
-                    href="/volunteer"
+                    href="https://forms.gle/fzwojwPnWVtsA7HKA"
                     className="inline-block bg-gray-800 hover:bg-gray-700 text-white font-bold px-8 py-4 text-lg border border-[#1a1a1a] hover:border-[#EB0028]/50 transition-all duration-300"
                   >
                     Volunteer
