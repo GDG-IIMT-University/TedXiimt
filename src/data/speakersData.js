@@ -85,7 +85,7 @@ const speakersData = [
     id: 8,
     name: "Nishtha Mishra",
     designation: "Digital Marketing, Martech",
-    image: "https://drive.google.com/file/d/1yIsSLifnP0yxgJIA0bJwtedLgjUX7g3z/view",
+    image: "https://media.licdn.com/dms/image/v2/D5603AQFcSbYT-GN65w/profile-displayphoto-crop_800_800/B56ZlbZcZzH8AI-/0/1758175021178?e=1763596800&v=beta&t=zc5acEjjeARRhj3evM2wWAM9SLNdRfwYnweI1nxFeZ8",
     shortBio: "As a founder of Firstshot Technologies, a marketing‐tech venture that empowers brands through AI-powered influencer campaigns and performance marketing strategies to help brands scale efficiently. With a background in analytics and campaign optimisation, I am on a mission to bring transparency, efficiency and measurable ROI to the influencer ecosystem. Soon in the process of launching an FMCG brand.",
     detailedBio: "Nishtha Mishra is a dynamic entrepreneur and digital marketing expert with a passion for leveraging technology to drive brand growth. As the founder of Firstshot Technologies, she has been at the forefront of creating innovative marketing solutions that harness the power of AI and data analytics. Her extensive experience in campaign optimisation and influencer marketing has enabled her to deliver exceptional results for clients across various industries. Nishtha is committed to fostering a culture of transparency and accountability in the marketing ecosystem, ensuring that brands can measure their ROI effectively. With plans to launch her own FMCG brand, she is poised to make a significant impact in the industry.",
     quote: "Empowering brands to thrive in the digital age."
