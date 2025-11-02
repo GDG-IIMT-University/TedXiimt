@@ -72,15 +72,24 @@ const speakersData = [
     detailedBio: "Piyush Sharma, the founder of Tricky Man, transitioned from a software engineering career to become a leading educational content creator. His YouTube channel, Tricky Man, offers practical tutorials on coding, digital tools, and career development, aiming to make learning accessible and engaging. Recognized as one of India's Top 25 Educational Influencers, Piyush has been invited to speak at prominent institutions like IIIT Delhi, IIIT Lucknow, and corporate events hosted by Microsoft and Google. His mission is to bridge the gap between academic learning and real-world skills, helping students navigate internships, job placements, and technical skill development with confidence.",
     quote: "Empowering students with knowledge to shape their futures."
   },
+  // {
+  //   id: 8,
+  //   name: "Abhinav Chaudhary",
+  //   designation: "World Record Holder, Dancer & Social Advocate",
+  //   image: "https://static.atypicaladvantage.in/images/talents/FT7uXxb39O8pNa6hYS5JCuIKK9SUGwawAuqDsJBv.jpg",
+  //   shortBio: "Abhinav Chaudhary, diagnosed with 60% intellectual disability, holds the World Record for performing the maximum number of dance forms by a special child. A passionate dancer, model, and actor, he also runs a dance academy teaching children with special needs.",
+  //   detailedBio: "Abhinav Chaudhary is a beacon of inspiration, demonstrating that determination transcends limitations. Despite being diagnosed with 60% intellectual disability, he has achieved remarkable success in the fields of dance, acting, and modeling. His accolades include World Record for performing the maximum number of dance forms by a special child, awarded by World Records India; Participation in national dance competitions and reality shows such as Dance India Dance and India's Got Talent; and National Award for Individual Excellence-2023 in the category of 'Best Disabled' for his outstanding work in art, culture, and social service. Beyond his performances, Abhinav is committed to giving back to the community. He runs a dance academy where he teaches dance to children with special needs and underprivileged kids, fostering an inclusive environment and empowering the next generation through the arts.",
+  //   quote: "Dance is not just movement; it's a language of the soul that transcends all barriers."
+  // }, 
   {
     id: 8,
-    name: "Abhinav Chaudhary",
-    designation: "World Record Holder, Dancer & Social Advocate",
-    image: "https://static.atypicaladvantage.in/images/talents/FT7uXxb39O8pNa6hYS5JCuIKK9SUGwawAuqDsJBv.jpg",
-    shortBio: "Abhinav Chaudhary, diagnosed with 60% intellectual disability, holds the World Record for performing the maximum number of dance forms by a special child. A passionate dancer, model, and actor, he also runs a dance academy teaching children with special needs.",
-    detailedBio: "Abhinav Chaudhary is a beacon of inspiration, demonstrating that determination transcends limitations. Despite being diagnosed with 60% intellectual disability, he has achieved remarkable success in the fields of dance, acting, and modeling. His accolades include World Record for performing the maximum number of dance forms by a special child, awarded by World Records India; Participation in national dance competitions and reality shows such as Dance India Dance and India's Got Talent; and National Award for Individual Excellence-2023 in the category of 'Best Disabled' for his outstanding work in art, culture, and social service. Beyond his performances, Abhinav is committed to giving back to the community. He runs a dance academy where he teaches dance to children with special needs and underprivileged kids, fostering an inclusive environment and empowering the next generation through the arts.",
-    quote: "Dance is not just movement; it's a language of the soul that transcends all barriers."
-  }, 
+    name: "Nishtha Mishra",
+    designation: "Digital Marketing, Martech",
+    image: "https://drive.google.com/file/d/1yIsSLifnP0yxgJIA0bJwtedLgjUX7g3z/view",
+    shortBio: "As a founder of Firstshot Technologies, a marketing‐tech venture that empowers brands through AI-powered influencer campaigns and performance marketing strategies to help brands scale efficiently. With a background in analytics and campaign optimisation, I am on a mission to bring transparency, efficiency and measurable ROI to the influencer ecosystem. Soon in the process of launching an FMCG brand.",
+    detailedBio: "Nishtha Mishra is a dynamic entrepreneur and digital marketing expert with a passion for leveraging technology to drive brand growth. As the founder of Firstshot Technologies, she has been at the forefront of creating innovative marketing solutions that harness the power of AI and data analytics. Her extensive experience in campaign optimisation and influencer marketing has enabled her to deliver exceptional results for clients across various industries. Nishtha is committed to fostering a culture of transparency and accountability in the marketing ecosystem, ensuring that brands can measure their ROI effectively. With plans to launch her own FMCG brand, she is poised to make a significant impact in the industry.",
+    quote: "Empowering brands to thrive in the digital age."
+  },
   {
     id: 9,
     name: "Siddhart Sagar",
