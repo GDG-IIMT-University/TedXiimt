@@ -30,7 +30,7 @@ const Footer = () => {
         <div>
           <h3 className="text-xl font-semibold text-red-500 mb-4">Contact Us</h3>
           <p className="text-gray-400 text-sm mb-2">
-            Email: <a href="mailto:info@tedxiimtuniversity.com" className="hover:text-red-400">info@tedxiimtuniversity.com</a>
+            Email: <a href="mailto:tedxiimtuniversity@gmail.com" className="hover:text-red-400">tedxiimtuniversity@gmail.com</a>
           </p>
           <p className="text-gray-400 text-sm">
             Phone: <a href="tel:+918923550415" className="hover:text-red-400">+91 89235 50415</a>
