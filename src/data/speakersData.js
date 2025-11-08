@@ -4,29 +4,29 @@ const speakersData = [
     id: 1,
     name: "Miriam Chandy Menacherry",
     designation: "Film Director, Producer, and Storyteller",
-    image: "https://media.licdn.com/dms/image/v2/D4D03AQGMxsvn0Ai_6w/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1705414202635?e=1762387200&v=beta&t=Vh7qAfntea7MF3fItp_BbC-EeIc9Q59ZyjZs6j37p0k",
+    image: "https://media.licdn.com/dms/image/v2/D4D03AQGMxsvn0Ai_6w/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1705414202635?e=1764201600&v=beta&t=ldOa0fyoamaP-WR2VWOJhVKyImnjkdR9bMwBTwYNb2A",
     shortBio: "Miriam Chandy Menacherry is an award-winning documentary filmmaker and director known for her compelling storytelling and impactful narratives that explore real human stories with cinematic depth.",
     detailedBio: "Miriam Chandy Menacherry is a celebrated Indian filmmaker and director whose documentaries spotlight untold stories of resilience, courage, and social change. Her work—screened at international film festivals—beautifully bridges journalism and cinema, revealing the extraordinary within the ordinary. Founder of Filament Pictures, she has produced several critically acclaimed documentaries that amplify unheard voices and spark meaningful dialogue through film.",
     quote: "Stories have the power to move hearts and change minds."
   },
-  {
-    id: 2,
-    name: "Nupur Goel",
-    designation: "IAS, Chief Development Officer - Meerut",
-    image: "https://pbs.twimg.com/profile_images/1898259805090844672/kSCT4Kbg_400x400.jpg",
-    shortBio: "AIR-11 in UPSC CSE 2019. She cleared the examination after six attempts, demonstrating remarkable persistence and dedication to public service.",
-    detailedBio: "Nupur Goel is the Chief Development Officer (CDO) of Meerut, Uttar Pradesh, from the UPSC 2019 batch (UP cadre). She cleared the UPSC Civil Services Examination with an All India Rank of 11 after six attempts, showcasing extraordinary perseverance. She holds a B.Tech in Electronics & Communication from Delhi Technological University and a Master's degree in Public Administration from IGNOU. As CDO, she has been involved in implementing schemes to improve rural development and food processing, and was honored for her work in the Prime Minister's Micro Food Processing Enterprises Scheme, boosting farmer incomes and promoting food processing in rural areas.",
-    quote: "Persistence is not just about trying again—it's about learning, adapting, and growing stronger with each attempt."
-  },
-  {
-    id: 3,
-    name: "Arun Govil",
-    designation: "Actor, Producer & Member of Parliament",
-    image: "https://upload.wikimedia.org/wikipedia/commons/6/6e/Arun_Govil.jpg",
-    shortBio: "Arun Govil is the legendary actor best known for portraying Lord Rama in Ramayan. Born in Meerut, he rose from film and TV to public life, now serving as the elected MP from Meerut.",
-    detailedBio: "Arun Govil (born January 12, 1952, Meerut) is a distinguished actor, producer, and politician with a background in Engineering Science from Chaudhary Charan Singh University, Meerut. He began his cinema career with Paheli (1977), then films like Sawan Ko Aane Do and Saanch Ko Aanch Nahin. He became a household name by playing Lord Rama in Ramanand Sagar's iconic TV series Ramayan (1987), a role that cemented his place in Indian popular culture. Over decades, he appeared in multiple mythological shows including Vikram Aur Betaal. In recent years, he joined BJP and won the Meerut Lok Sabha constituency in the 2024 elections, blending his legacy in entertainment with service to the public.",
-    quote: "Some roles stay with you—not because you played them, but because people believed in them."
-  },
+  // {
+  //   id: 2,
+  //   name: "Nupur Goel",
+  //   designation: "IAS, Chief Development Officer - Meerut",
+  //   image: "https://pbs.twimg.com/profile_images/1898259805090844672/kSCT4Kbg_400x400.jpg",
+  //   shortBio: "AIR-11 in UPSC CSE 2019. She cleared the examination after six attempts, demonstrating remarkable persistence and dedication to public service.",
+  //   detailedBio: "Nupur Goel is the Chief Development Officer (CDO) of Meerut, Uttar Pradesh, from the UPSC 2019 batch (UP cadre). She cleared the UPSC Civil Services Examination with an All India Rank of 11 after six attempts, showcasing extraordinary perseverance. She holds a B.Tech in Electronics & Communication from Delhi Technological University and a Master's degree in Public Administration from IGNOU. As CDO, she has been involved in implementing schemes to improve rural development and food processing, and was honored for her work in the Prime Minister's Micro Food Processing Enterprises Scheme, boosting farmer incomes and promoting food processing in rural areas.",
+  //   quote: "Persistence is not just about trying again—it's about learning, adapting, and growing stronger with each attempt."
+  // },
+  // {
+  //   id: 3,
+  //   name: "Arun Govil",
+  //   designation: "Actor, Producer & Member of Parliament",
+  //   image: "https://upload.wikimedia.org/wikipedia/commons/6/6e/Arun_Govil.jpg",
+  //   shortBio: "Arun Govil is the legendary actor best known for portraying Lord Rama in Ramayan. Born in Meerut, he rose from film and TV to public life, now serving as the elected MP from Meerut.",
+  //   detailedBio: "Arun Govil (born January 12, 1952, Meerut) is a distinguished actor, producer, and politician with a background in Engineering Science from Chaudhary Charan Singh University, Meerut. He began his cinema career with Paheli (1977), then films like Sawan Ko Aane Do and Saanch Ko Aanch Nahin. He became a household name by playing Lord Rama in Ramanand Sagar's iconic TV series Ramayan (1987), a role that cemented his place in Indian popular culture. Over decades, he appeared in multiple mythological shows including Vikram Aur Betaal. In recent years, he joined BJP and won the Meerut Lok Sabha constituency in the 2024 elections, blending his legacy in entertainment with service to the public.",
+  //   quote: "Some roles stay with you—not because you played them, but because people believed in them."
+  // },
   {
     id: 4,
     name: "Shri Yogesh Mohan Ji Gupta",
@@ -36,15 +36,15 @@ const speakersData = [
     detailedBio: "Shri Yogesh Mohan Ji Gupta serves as the Chancellor of IIMT UNIVERSITY, Meerut. IIMT UNIVERSITY is a private university established in 2016, located at 'O' Pocket, Ganga Nagar, Meerut, U.P. The university is NAAC accredited with 'A' grade, and is recognized by the University Grants Commission (UGC) under sections 2(f) & 12B. Under his leadership, the university has grown to provide quality education across multiple disciplines while maintaining high academic standards.",
     quote: "Education is the foundation upon which we build our future."
   },
-  {
-    id: 5,
-    name: "Dr. Mayank Agarwal",
-    designation: "Pro-Chancellor, IIMT UNIVERSITY Meerut",
-    image: "https://iimtcollege.edu.in/images/managing-direcor-img.jpg",
-    shortBio: "Dr. Mayank Agarwal is the Pro-Chancellor of IIMT UNIVERSITY, Meerut, and Managing Director of the IIMT UNIVERSITY Group, devoted to advancing education, values, and social welfare through leadership in academia.",
-    detailedBio: "Dr. Mayank Agarwal is a visionary academic leader serving as Pro-Chancellor of IIMT UNIVERSITY, Meerut, and as Managing Director of the IIMT UNIVERSITY Group of Colleges. Under his leadership, IIMT UNIVERSITY has expanded its reach in education, integrated values-based learning, and launched initiatives aimed at community development. His stewardship in programs such as the Adult Literacy Mission (for villages in Meerut) reflects his commitment to social causes beyond academia. He fosters an environment that balances technological advancement with ethical grounding, preparing students not just for careers but for meaningful contributions to society.",
-    quote: "Education must uplift both knowledge and compassion."
-  },
+  // {
+  //   id: 5,
+  //   name: "Dr. Mayank Agarwal",
+  //   designation: "Pro-Chancellor, IIMT UNIVERSITY Meerut",
+  //   image: "https://iimtcollege.edu.in/images/managing-direcor-img.jpg",
+  //   shortBio: "Dr. Mayank Agarwal is the Pro-Chancellor of IIMT UNIVERSITY, Meerut, and Managing Director of the IIMT UNIVERSITY Group, devoted to advancing education, values, and social welfare through leadership in academia.",
+  //   detailedBio: "Dr. Mayank Agarwal is a visionary academic leader serving as Pro-Chancellor of IIMT UNIVERSITY, Meerut, and as Managing Director of the IIMT UNIVERSITY Group of Colleges. Under his leadership, IIMT UNIVERSITY has expanded its reach in education, integrated values-based learning, and launched initiatives aimed at community development. His stewardship in programs such as the Adult Literacy Mission (for villages in Meerut) reflects his commitment to social causes beyond academia. He fosters an environment that balances technological advancement with ethical grounding, preparing students not just for careers but for meaningful contributions to society.",
+  //   quote: "Education must uplift both knowledge and compassion."
+  // },
   // {
   //   id: 6,
   //   name: "Dr. Akshay Raj",
@@ -67,7 +67,7 @@ const speakersData = [
     id: 7,
     name: "Piyush Sharma",
     designation: "Founder & Creator, Tricky Man",
-    image: "https://media.licdn.com/dms/image/v2/D5603AQEW0xcLOMVKLQ/profile-displayphoto-shrink_800_800/B56ZdyzQR0GoAc-/0/1749977728888?e=1762387200&v=beta&t=CZBVXS8Fv7MPtRDOpHSWKdRbXg-ZaDyOAhLfq5Xhb4w",
+    image: "https://media.licdn.com/dms/image/v2/D5603AQEW0xcLOMVKLQ/profile-displayphoto-shrink_800_800/B56ZdyzQR0GoAc-/0/1749977728888?e=1764201600&v=beta&t=4JWrL-lpVDVoiCsSIVOSwpAE56hC7-0GoPTquW2c0rs",
     shortBio: "Piyush Sharma, known as Tricky Man, is a software engineer turned full-time educator and content creator. He founded the YouTube channel Tricky Man to simplify career development, coding, and digital tools for students. With over 700K subscribers, his videos have empowered countless learners.",
     detailedBio: "Piyush Sharma, the founder of Tricky Man, transitioned from a software engineering career to become a leading educational content creator. His YouTube channel, Tricky Man, offers practical tutorials on coding, digital tools, and career development, aiming to make learning accessible and engaging. Recognized as one of India's Top 25 Educational Influencers, Piyush has been invited to speak at prominent institutions like IIIT Delhi, IIIT Lucknow, and corporate events hosted by Microsoft and Google. His mission is to bridge the gap between academic learning and real-world skills, helping students navigate internships, job placements, and technical skill development with confidence.",
     quote: "Empowering students with knowledge to shape their futures."
@@ -98,8 +98,16 @@ const speakersData = [
     shortBio: "Siddhart Sagar is a stand-up comedian, writer, and actor known for sharp observational humour and energetic stage presence across clubs and digital platforms.",
     detailedBio: "Siddhart Sagar began his career in stand-up comedy and has since established himself as a versatile performer and writer. His sets blend relatable everyday anecdotes with witty commentary on modern life, earning him shows at major comedy clubs and festivals across India. He has appeared on television and streaming platforms and contributed writing for sketches and live events, building a reputation for crisp timing and audience rapport.",
     quote: "Comedy is just truth with a laugh track."
+  },
+  {
+    id: 10,
+    name: "Sparsh Agarwal",
+    designation: "Co-Founder & CEO, AP Mobility India Private Limited",
+    image: "https://via.placeholder.com/400x400.png?text=Sparsh+Agarwal",
+    shortBio: "Sparsh Agarwal is the co-founder and CEO of AP Mobility India Private Limited, focused on innovative mobility and transportation solutions.",
+    detailedBio: "Sparsh Agarwal leads AP Mobility India Private Limited, driving product strategy and partnerships for sustainable urban mobility, EV infrastructure, and smart-city transportation projects. With experience in scaling mobility startups and building cross-functional teams, he focuses on impactful technology adoption and ecosystem development.",
+    quote: "Innovation in mobility is about creating access and opportunity for everyone."
   }
-
 ];
 
 export default speakersData;
