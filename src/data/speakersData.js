@@ -103,7 +103,7 @@ const speakersData = [
     id: 10,
     name: "Sparsh Agarwal",
     designation: "Co-Founder & CEO, AP Mobility India Private Limited",
-    image: "https://via.placeholder.com/400x400.png?text=Sparsh+Agarwal",
+    image: "https://media.licdn.com/dms/image/v2/D5603AQGNjy7WKJ0vnA/profile-displayphoto-crop_800_800/B56ZjMLp8YHkAI-/0/1755772265396?e=1764201600&v=beta&t=b-V0Q7dLOBDQ8VhVC_XW9KyX0tPrDEYVhKdsfg2OxQA",
     shortBio: "Sparsh Agarwal is the co-founder and CEO of AP Mobility India Private Limited, focused on innovative mobility and transportation solutions.",
     detailedBio: "Sparsh Agarwal leads AP Mobility India Private Limited, driving product strategy and partnerships for sustainable urban mobility, EV infrastructure, and smart-city transportation projects. With experience in scaling mobility startups and building cross-functional teams, he focuses on impactful technology adoption and ecosystem development.",
     quote: "Innovation in mobility is about creating access and opportunity for everyone."
