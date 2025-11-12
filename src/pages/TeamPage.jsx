@@ -9,7 +9,7 @@ const TeamPage = () => {
       id: 1,
       name: 'Mohd Kaif',
       role: 'Organizer & Lead',
-      image: '/api/placeholder/400/400',
+      image: '#',
       bio: 'Passionate about bringing innovative ideas to life and creating impactful experiences.',
       responsibilities: ['Event Planning', 'Strategic Direction', 'Community Building'],
       contact: {
@@ -19,9 +19,9 @@ const TeamPage = () => {
     },
     {
       id: 2,
-      name: 'Team Member',
+      name: 'Prateek Kv',
       role: 'Co-Organizer',
-      image: '/api/placeholder/400/400',
+      image: '#',
       bio: 'Dedicated to creating memorable experiences that inspire and transform.',
       responsibilities: ['Logistics', 'Coordination', 'Partnerships'],
       contact: {
@@ -31,9 +31,9 @@ const TeamPage = () => {
     },
     {
       id: 3,
-      name: 'Team Member',
-      role: 'Creative Director',
-      image: '/api/placeholder/400/400',
+      name: 'Tanishka Khewal',
+      role: 'Co-Organizer',
+      image: '#',
       bio: 'Bringing creative vision to every aspect of the TEDxIIMT UNIVERSITY experience.',
       responsibilities: ['Design', 'Branding', 'Content Creation'],
       contact: {
@@ -43,9 +43,9 @@ const TeamPage = () => {
     },
     {
       id: 4,
-      name: 'Team Member',
-      role: 'Marketing Lead',
-      image: '/api/placeholder/400/400',
+      name: 'Nakul Jindal',
+      role: 'Team Head',
+      image: '/assets/Nakul.png',
       bio: 'Spreading ideas worth spreading through strategic marketing and outreach.',
       responsibilities: ['Social Media', 'PR', 'Audience Engagement'],
       contact: {
@@ -55,25 +55,109 @@ const TeamPage = () => {
     },
     {
       id: 5,
-      name: 'Team Member',
+      name: 'Sachin Sharma Maiytre',
       role: 'Operations Manager',
-      image: '/api/placeholder/400/400',
+      image: '/assets/Sachin.jpeg',
       bio: 'Ensuring flawless execution of every detail, big and small.',
       responsibilities: ['Venue Management', 'Technical Setup', 'Day-of Coordination'],
       contact: {
         email: 'ops@tedxIIMT UNIVERSITY.com',
-        linkedin: '#'
+        linkedin: 'https://www.linkedin.com/in/sachin-sharma-9ab0bb329'
       }
     },
     {
       id: 6,
-      name: 'Team Member',
+      name: 'Vansh Aneja',
       role: 'Speaker Curator',
-      image: '/api/placeholder/400/400',
+      image: '/assets/vansh.jpeg',
       bio: 'Discovering and nurturing speakers with ideas worth spreading.',
       responsibilities: ['Speaker Selection', 'Coaching', 'Content Review'],
       contact: {
         email: 'speakers@tedxIIMT UNIVERSITY.com',
+        linkedin: '#'
+      }
+    },
+    {
+      id: 7,
+      name: 'Akshay Dhiman',
+      role: 'Content & Outreach',
+      image: '#',
+      bio: 'Crafting compelling content and building connections to amplify our message.',
+      responsibilities: ['Content Strategy', 'Outreach', 'Community Engagement'],
+      contact: {
+        email: 'akshay@tedxiimtuniversity.com',
+        linkedin: '#'
+      }
+    },
+    {
+      id: 8,
+      name: 'Bakhtiar Siddiqui',
+      role: 'Sponsorships & Partnerships',
+      image: '#',
+      bio: 'Building sustainable partnerships and securing support to make the event possible.',
+      responsibilities: ['Sponsor Relations', 'Partnership Development', 'Proposal Management'],
+      contact: {
+        email: 'bakhtiar@tedxiimtuniversity.com',
+        linkedin: '#'
+      }
+    },
+    {
+      id: 9,
+      name: 'Afzal',
+      role: 'Creative Team',
+      image: '/assets/afzal.jpeg',
+      bio: 'Bringing creative concepts to life across visuals and event experiences.',
+      responsibilities: ['Concept Design', 'Visual Direction', 'Brand Support'],
+      contact: {
+        email: 'creative@tedxiimtuniversity.com',
+        linkedin: 'https://www.linkedin.com/in/afzal-692858270'
+      }
+    },
+    {
+      id: 10,
+      name: 'Mudassir Zaidi',
+      role: 'Technical Lead',
+      image: '#',
+      bio: 'Ensuring all technical aspects run smoothly before and during the event.',
+      responsibilities: ['AV Setup', 'Streaming', 'Technical Coordination'],
+      contact: {
+        email: 'mudassir@tedxiimtuniversity.com',
+        linkedin: '#'
+      }
+    },
+    {
+      id: 11,
+      name: 'Aditya Yadav',
+      role: 'Logistics Coordinator',
+      image: '/assets/Aditya_Yadav.jpeg',
+      bio: 'Coordinating logistics to ensure seamless operations on event day.',
+      responsibilities: ['Venue Logistics', 'Transport Coordination', 'Onsite Management'],
+      contact: {
+        email: 'aditya.yadav@tedxiimtuniversity.com',
+        linkedin: '#'
+      }
+    },
+    {
+      id: 12,
+      name: 'Aditya Kumar',
+      role: 'Design Specialist',
+      image: '#',
+      bio: 'Designing visuals and materials that reflect the TEDxIIMT UNIVERSITY identity.',
+      responsibilities: ['Graphic Design', 'Brand Collateral', 'Digital Assets'],
+      contact: {
+        email: 'aditya.kumar@tedxiimtuniversity.com',
+        linkedin: '#'
+      }
+    },
+    {
+      id: 13,
+      name: 'Vedansh',
+      role: 'Video Editing Lead',
+      image: '#',
+      bio: 'Leading post-production to create polished video content for talks and promos.',
+      responsibilities: ['Video Editing', 'Post-Production', 'Media Delivery'],
+      contact: {
+        email: 'vedansh@tedxiimtuniversity.com',
         linkedin: '#'
       }
     }
@@ -132,7 +216,8 @@ const TeamPage = () => {
                       <img
                         src={member.image}
                         alt={member.name}
-                        className="w-full h-full object-cover"
+                        className="w-full h-full object-contain bg-[#181818]"
+                        style={{objectPosition: 'center'}}
                         onError={(e) => {
                           e.target.src = '/api/placeholder/400/400';
                         }}
