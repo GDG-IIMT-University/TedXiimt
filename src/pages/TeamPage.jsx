@@ -9,9 +9,9 @@ const TeamPage = () => {
       id: 1,
       name: 'Mohd Kaif',
       role: 'Organizer & Lead',
-      image: '#',
-      bio: 'Passionate about bringing innovative ideas to life and creating impactful experiences.',
-      responsibilities: ['Event Planning', 'Strategic Direction', 'Community Building'],
+      image: '/assets/kaif.jpeg',
+      bio: 'Visionary leader coordinating strategy, partnerships, and execution to deliver a cohesive TEDx experience that inspires the community.',
+      responsibilities: ['Overall event strategy', 'Stakeholder & partner relations', 'Program direction & quality control'],
       contact: {
         email: 'kaifbilalibrahim@gmail.com',
         linkedin: 'https://www.linkedin.com/in/mohdkaifbilal/'
@@ -21,24 +21,36 @@ const TeamPage = () => {
       id: 2,
       name: 'Prateek Kv',
       role: 'Co-Organizer',
-      image: '#',
-      bio: 'Dedicated to creating memorable experiences that inspire and transform.',
-      responsibilities: ['Logistics', 'Coordination', 'Partnerships'],
+      image: 'https://media.licdn.com/dms/image/v2/D5603AQHLzSrmhSc7Cw/profile-displayphoto-shrink_800_800/B56ZQo7stMG8Ac-/0/1735853526389?e=1764806400&v=beta&t=z1RfcaZrScSvYjJ08vLJCtYaYboYajOpOAz95UbcDgE',
+      bio: 'Operationally focused co-organizer who ensures plans translate into flawless on-the-ground execution and strong partner coordination.',
+      responsibilities: ['Logistics planning & execution', 'Cross-team coordination', 'Vendor & partner management'],
       contact: {
-        email: 'team@tedxIIMT UNIVERSITY.com',
-        linkedin: '#'
+        email: 'Prateekkv150706@gmail.com',
+        linkedin: 'https://www.linkedin.com/in/prateek-kv-613822281/'
       }
     },
     {
       id: 3,
       name: 'Tanishka Khewal',
       role: 'Co-Organizer',
-      image: '#',
-      bio: 'Bringing creative vision to every aspect of the TEDxIIMT UNIVERSITY experience.',
-      responsibilities: ['Design', 'Branding', 'Content Creation'],
+      image: 'https://media.licdn.com/dms/image/v2/D5603AQH04eW9iJKzmQ/profile-displayphoto-crop_800_800/B56Zm4sPFwG4AI-/0/1759740230389?e=1764806400&v=beta&t=3-NknjC3d6Zy8zi9YgeldHgMEAoOVikVRGmvlQPx8XQ',
+      bio: 'Creative operations lead who blends design thinking with event planning to craft memorable audience experiences and brand consistency.',
+      responsibilities: ['Creative direction', 'Brand consistency & visual identity', 'Content planning & production'],
       contact: {
-        email: 'creative@tedxIIMT UNIVERSITY.com',
-        linkedin: '#'
+        email: 'khewaltanishka@gmail.com',
+        linkedin: 'https://www.linkedin.com/in/tanishka-k-71200k/'
+      }
+    },
+    {
+      id: 4,
+      name: 'Mukesh Pal',
+      role: 'Team Head',
+      image: 'https://media.licdn.com/dms/image/v2/D5635AQE-UvdK4UANhw/profile-framedphoto-shrink_800_800/B56ZlH.myGKIAg-/0/1757849218576?e=1763647200&v=beta&t=YnOJ3OutvcA82azATMy3H6hOUcb7kVR05K_i970b2Zc',
+      bio: 'Finance and logistics head ensuring budget adherence, resource allocation, and smooth logistical operations throughout the event lifecycle.',
+      responsibilities: ['Budget management & financial planning', 'Logistics coordination & scheduling', 'Resource allocation & vendor negotiations'],
+      contact: {
+        email: 'mukesh.mmp1234@gmail.com',
+        linkedin: 'https://www.linkedin.com/in/mukprabhakar/'
       }
     },
     {
@@ -46,8 +58,8 @@ const TeamPage = () => {
       name: 'Nakul Jindal',
       role: 'Team Head',
       image: '/assets/Nakul.png',
-      bio: 'Spreading ideas worth spreading through strategic marketing and outreach.',
-      responsibilities: ['Social Media', 'PR', 'Audience Engagement'],
+      bio: 'Marketing and outreach head focused on amplifying the event’s reach, driving engagement, and building audience relationships.',
+      responsibilities: ['Marketing strategy & campaigns', 'Public relations & media outreach', 'Audience growth & engagement'],
       contact: {
         email: 'marketing@tedxIIMT UNIVERSITY.com',
         linkedin: '#'
@@ -57,11 +69,11 @@ const TeamPage = () => {
       id: 5,
       name: 'Sachin Sharma Maiytre',
       role: 'Operations Manager',
-      image: '/assets/Sachin.jpeg',
-      bio: 'Ensuring flawless execution of every detail, big and small.',
-      responsibilities: ['Venue Management', 'Technical Setup', 'Day-of Coordination'],
+      image: '/assets/Sachin.jpg',
+      bio: 'Operational lead ensuring venues, vendors, and technical workflows are coordinated for a smooth event experience.',
+      responsibilities: ['Venue & vendor management', 'Technical logistics & equipment', 'Event-day operations and contingency planning'],
       contact: {
-        email: 'ops@tedxIIMT UNIVERSITY.com',
+        email: 'sachinmaiyatre2@gmail.com',
         linkedin: 'https://www.linkedin.com/in/sachin-sharma-9ab0bb329'
       }
     },
@@ -70,11 +82,107 @@ const TeamPage = () => {
       name: 'Vansh Aneja',
       role: 'Speaker Curator',
       image: '/assets/vansh.jpeg',
-      bio: 'Discovering and nurturing speakers with ideas worth spreading.',
-      responsibilities: ['Speaker Selection', 'Coaching', 'Content Review'],
+      bio: 'Speaker curator dedicated to sourcing, coaching, and refining speaker narratives to maximize impact and audience resonance.',
+      responsibilities: ['Speaker discovery & selection', 'Speaker coaching & feedback', 'Program sequencing & content alignment'],
       contact: {
-        email: 'speakers@tedxIIMT UNIVERSITY.com',
-        linkedin: '#'
+        email: 'vanshaneja29@gmail.com',
+        linkedin: 'https://www.linkedin.com/in/vansh-aneja-0b2aa234a/'
+      }
+    },
+    {
+      id: 7,
+      name: 'Akshay Dhiman',
+      role: 'Content & Outreach',
+      image: '/assets/akshay.jpeg',
+      bio: 'AI/ML enthusiast and tech team member at TEDxIIMTU, driven by curiosity and a love for building smart solutions.',
+      responsibilities: ['Content strategy & editorial', 'Community outreach & partnerships', 'Social content and campaign execution'],
+      contact: {
+        email: 'Akshay.cse.2005@gmail.com',
+        linkedin: 'https://www.linkedin.com/in/akshay-dhiman-a95734285'
+      }
+    },
+    {
+      id: 8,
+      name: 'Bakhtiar Siddiqui',
+      role: 'Sponsorships & Partnerships',
+      image: '/assets/bakhtiar.jpeg',
+      bio: 'Partnership lead building long-term sponsor relationships and tailored proposals that align sponsor goals with event impact.',
+      responsibilities: ['Sponsor acquisition & retention', 'Proposal development & negotiation', 'Partnership program management'],
+      contact: {
+        email: 'bakhtiarsiddiqui2@gmail.com',
+        linkedin: 'https://www.linkedin.com/in/bakhtiar-siddiqui-51291b291/'
+      }
+    },
+    {
+      id: 9,
+      name: 'Afzal',
+      role: 'Marketing Lead',
+      image: '/assets/afzal.jpg',
+      bio: 'Creative specialist turning concepts into visual assets and immersive experiences that elevate the TEDx brand on stage and online.',
+      responsibilities: ['Concept ideation & visual direction', 'Event set and collateral design', 'Multimedia asset delivery'],
+      contact: {
+        email: 'afzalchodhary03@gmail.com',
+        linkedin: 'https://www.linkedin.com/in/afzal-692858270'
+      }
+    },
+    {
+      id: 10,
+      name: 'Mudassir Zaidi',
+      role: 'Technical Lead',
+      image: '/assets/mudassir.jpeg',
+      bio: 'Technical lead responsible for AV, streaming, and infrastructure to ensure reliable delivery of live and recorded content.',
+      responsibilities: ['Audio-visual systems design', 'Live streaming & broadcast operations', 'Technical team coordination & testing'],
+      contact: {
+        email: 'mudassirzaidi264@gmail.com',
+        linkedin: 'https://www.linkedin.com/in/mudassir-mehdi/'
+      }
+    },
+    {
+      id: 11,
+      name: 'Aditya Yadav',
+      role: 'Post Production Lead',
+      image: '/assets/Aditya_Yadav.jpeg',
+      bio: 'Post-production lead overseeing editing, color grading, and final delivery of speaker talks and promotional videos.',
+      responsibilities: ['Video editing & post-production', 'Quality control & final delivery', 'Media asset organization & archival'],
+      contact: {
+        email: 'adityay9451@gmail.com',
+        linkedin: 'https://www.linkedin.com/in/aaditya-yadav-a77416332/' 
+      }
+    },
+    {
+      id: 12,
+      name: 'Aditya Kumar',
+      role: 'Marketing Team',
+      image: '/assets/aditya-kumar.jpeg',
+      bio: 'Design specialist creating impactful graphics and collateral that communicate the event’s message with clarity and style.',
+      responsibilities: ['Graphic design & templates', 'Brand collateral & print assets', 'Digital asset creation & maintenance'],
+      contact: {
+        email: 'kumaraditya28411@gmail.com',
+        linkedin: 'https://www.linkedin.com/in/aditya-kumar-7588b5380'
+      }
+    },
+    {
+      id: 13,
+      name: 'Vedans Kashyap',
+      role: 'Video Editing Lead',
+      image: '/assets/vedansh.jpeg',
+      bio: 'Lead editor who crafts polished video narratives from raw footage to maximize clarity, pacing, and emotional impact.',
+      responsibilities: ['Editing & storytelling', 'Motion graphics & titling', 'Delivery standards & encoding'],
+      contact: {
+        email: 'vedans.kashyap2007@gmail.com',
+        linkedin: 'https://www.linkedin.com/in/vedans-kashyap-80b51b315'
+      }
+    },
+    {
+      id: 14,
+      name: 'Ankur Singh',
+      role: 'Video Editing Lead',
+      image: '/assets/ankur.png',
+      bio: 'Video editing lead focused on transforming event footage into engaging highlight reels and promotional content.',
+      responsibilities: ['Video editing & post-production', 'Highlight reel creation', 'Content optimization for social media'],
+      contact: {
+        email: 'ankursingh80014@gmail.com',
+        linkedin: 'https://www.linkedin.com/in/ankur-singh-ab504a332'
       }
     },
     {
