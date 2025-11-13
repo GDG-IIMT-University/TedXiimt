@@ -33,7 +33,7 @@ const TeamPage = () => {
       id: 3,
       name: 'Tanishka Khewal',
       role: 'Co-Organizer',
-      image: 'https://media.licdn.com/dms/image/v2/D5603AQH04eW9iJKzmQ/profile-displayphoto-crop_800_800/B56Zm4sPFwG4AI-/0/1759740230389?e=1764806400&v=beta&t=3-NknjC3d6Zy8zi9YgeldHgMEAoOVikVRGmvlQPx8XQ',
+      image: '/assets/tanishka.jpeg',
       bio: 'Creative operations lead who blends design thinking with event planning to craft memorable audience experiences and brand consistency.',
       responsibilities: ['Creative direction', 'Brand consistency & visual identity', 'Content planning & production'],
       contact: {
