@@ -114,6 +114,18 @@ const TeamPage = () => {
       }
     },
     {
+      id: 9,
+      name: 'Iram Saifi',
+      role: 'Creative Team',
+      image: '/assets/iram.jpeg',
+      bio: 'She is the part of creative and welcome team in TEDxIIMT University . She supported event design, guest coordination, and creating a friendly memorable experience for all attendees.',
+      responsibilities: ['Event design support', 'Guest coordination', 'Attendee experience enhancement'],
+      contact: {
+        email: 'iramsaifioo36@gmail.com',
+        linkedin: 'https://www.linkedin.com/in/iram-saifi-41716338b'
+      }
+    },
+    {
       id: 10,
       name: 'Afzal',
       role: 'Marketing Lead',
@@ -135,6 +147,18 @@ const TeamPage = () => {
       contact: {
         email: 'mudassirzaidi264@gmail.com',
         linkedin: 'https://www.linkedin.com/in/mudassir-mehdi/'
+      }
+    },
+    {
+      id: 12,
+      name: 'Sanjana Tomar',
+      role: 'Creative Team',
+      image: '/assets/sanjana.jpeg',
+      bio: 'She supported the TEDx creative team in designing visual concepts and assisting with event aesthetics. She worked as a volunteer contributing to brainstorming, layout ideas, and digital design elements.',
+      responsibilities: ['Visual design support', 'Event aesthetics assistance', 'Creative brainstorming'],
+      contact: {
+        email: 'sanjanatomar39@gmail.com',
+        linkedin: 'https://www.linkedin.com/in/sanjana-tomar-474413396'
       }
     },
     {
