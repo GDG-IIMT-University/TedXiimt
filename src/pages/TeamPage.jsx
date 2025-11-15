@@ -45,7 +45,7 @@ const TeamPage = () => {
       id: 4,
       name: 'Mukesh Pal',
       role: 'Team Head',
-      image: 'https://media.licdn.com/dms/image/v2/D5635AQE-UvdK4UANhw/profile-framedphoto-shrink_800_800/B56ZlH.myGKIAg-/0/1757849218576?e=1763647200&v=beta&t=YnOJ3OutvcA82azATMy3H6hOUcb7kVR05K_i970b2Zc',
+      image: '/assets/mukesh.jpeg',
       bio: 'Finance and logistics head ensuring budget adherence, resource allocation, and smooth logistical operations throughout the event lifecycle.',
       responsibilities: ['Budget management & financial planning', 'Logistics coordination & scheduling', 'Resource allocation & vendor negotiations'],
       contact: {
