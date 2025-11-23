@@ -221,6 +221,18 @@ const TeamPage = () => {
         linkedin: 'https://www.linkedin.com/in/ankur-singh-ab504a332'
       }
     },
+    {
+      id: 16,
+      name: 'Priya',
+      role: 'Creative Team',
+      image: '/assets/priya.jpeg',
+      bio: 'Creative team member contributing to visual design and event aesthetics to enhance the overall TEDx experience.',
+      responsibilities: ['Visual design support', 'Event aesthetics assistance', 'Creative brainstorming'],
+      contact: {
+        email: 'Sdkpriyakumari395@gmail.com',
+        linkedin: 'https://www.linkedin.com/in/priya-kumari-24a492396'
+      }
+    },
   ];
 
   return (
